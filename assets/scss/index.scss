@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@100..900&display=swap');
+@import './tailwind.scss';
+@import './variables.scss';
+@import './common.scss';
+@import "./animation";
+
+
+* {
+  font-family: "Archivo", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  @media (min-width: 640px) {
+    font-size: clamp(0.5rem, -0.0714rem + 1.1905vw, 1rem);
+  }
+
+  @media (max-width: 639px) {
+    font-size: 16px;
+  }
+}
+
+
+
+body {
+  margin: 0;
+  background: rgba(249, 249, 251, 0.40);
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.max-w-content {
+  @apply max-w-[calc(97rem_+_2rem)] w-full mx-auto px-4;
+}

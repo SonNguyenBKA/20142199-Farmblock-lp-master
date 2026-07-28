@@ -1,0 +1,38 @@
+{
+  "btn": {
+    "explore": "Khám phá mô hình",
+    "launch_app": "Visit Sample Garden",
+    "menu": "Menu",
+    "close": "Close"
+  },
+  "menu": {
+    "home": "Home",
+    "about_us": "About Me",
+    "model": "Model",
+    "technology": "Technology",
+    "contact": "Contact",
+    "download_app": "Download App"
+  },
+  "footer": {
+    "title": "Số hóa nông nghiệp – Chuẩn hóa vận hành – Tối ưu đầu tư",
+    "quick_access": "Quick access",
+    "terms_&_policies": "Terms & Policies",
+    "information": "Information",
+    "home": "Home",
+    "about_me": "About Me",
+    "operating_model": "Operating Model",
+    "blog": "Blog",
+    "privacy_policy": "Privacy Policy",
+    "terms_of_service": "Terms of Service",
+    "faq": "FAQ",
+    "address": "Address",
+    "phone_number": "Phone",
+    "email": "E-Mail"
+  },
+  "hero": {
+    "label": "Tiên phong trong số hoá tài sản Nông nghiệp",
+    "title": "Hành trình cùng Tây Nguyên Chạm đến tương lai",
+    "desc": "Từ những cánh đồng cà phê Tây Nguyên, chúng tôi kết nối thiên nhiên với nền tảng công nghệ tiên phong và hệ thống blockchain — mang nông sản Việt đến thế giới, cùng người nông dân viết nên câu chuyện bền vững.",
+  },
+  "coming_soon": "Coming soon"
+}
