@@ -6,13 +6,12 @@
     <div class="about-us-section-1--layer2"></div>
     <div class="about-us-section-1--layer3">
       <div class="block-content max-w-content" data-aos="fade-in" data-aos-delay="100">
-        <p class="text-[1rem] font-bold text-[#B4E27E] sm:text-[2rem]">Về chúng tôi</p>
+        <p class="text-[1rem] font-bold text-[#B4E27E] sm:text-[2rem]">{{ $t('about.sectionOne.eyebrow') }}</p>
         <p class="text-[2rem] font-bold leading-[135%] text-[#F0F9E5] sm:text-[4.5rem]">
-          Hành trình từ miền đất đỏ đến tương lai
+          {{ $t('about.sectionOne.title') }}
         </p>
         <p class="text-center font-normal leading-[135%] text-[#F0F9E5] text-[0.875remrem] sm:text-[1.5rem]">
-          Trên mảnh đất bazan trù phú, chúng tôi gieo những hạt giống của sự bền vững, <br />
-          kết nối thiên nhiên với công nghệ, cùng nông dân Tây Nguyên viết nên câu chuyện vươn ra thế giới.
+          {{ $t('about.sectionOne.desc') }}
         </p>
       </div>
     </div>

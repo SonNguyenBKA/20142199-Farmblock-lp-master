@@ -1,38 +1,326 @@
 {
   "btn": {
-    "explore": "Khám phá mô hình",
+    "explore": "Explore the model",
     "launch_app": "Visit Sample Garden",
     "menu": "Menu",
-    "close": "Close"
+    "close": "Close",
+    "discover_journey": "Explore the journey",
+    "contact": "Contact us",
+    "submit": "Submit information",
+    "view_all": "View all",
+    "read_more": "Read more",
+    "previous": "Previous",
+    "next": "Next"
   },
   "menu": {
     "home": "Home",
-    "about_us": "About Me",
-    "model": "Model",
-    "technology": "Technology",
+    "about_us": "About Us",
+    "model": "Operating Model",
+    "technology": "Farmer's Handbook",
     "contact": "Contact",
     "download_app": "Download App"
   },
   "footer": {
-    "title": "Số hóa nông nghiệp – Chuẩn hóa vận hành – Tối ưu đầu tư",
+    "title": "Digitize agriculture – Standardize operations – Optimize investment",
     "quick_access": "Quick access",
-    "terms_&_policies": "Terms & Policies",
+    "terms_&_policies": "Policies & Terms",
     "information": "Information",
     "home": "Home",
-    "about_me": "About Me",
+    "about_me": "About Us",
     "operating_model": "Operating Model",
-    "blog": "Blog",
+    "blog": "Farmer's Handbook",
     "privacy_policy": "Privacy Policy",
     "terms_of_service": "Terms of Service",
     "faq": "FAQ",
     "address": "Address",
     "phone_number": "Phone",
-    "email": "E-Mail"
+    "email": "E-Mail",
+    "copyright": "Copyright © 2025 Farmblock. All rights reserved."
+  },
+  "common": {
+    "coming_soon": "Coming soon",
+    "effective_date": "Effective Date",
+    "last_updated": "Last Updated",
+    "by": "By"
+  },
+  "forms": {
+    "gender": "Gender *",
+    "male": "Mr.",
+    "female": "Ms.",
+    "other": "Other",
+    "name": "Full name *",
+    "phone": "Phone number *",
+    "email": "E-Mail *",
+    "message": "Message",
+    "contact_info": "Contact information",
+    "address": "Address:",
+    "phone_label": "Phone:",
+    "email_label": "E-Mail:"
   },
   "hero": {
-    "label": "Tiên phong trong số hoá tài sản Nông nghiệp",
-    "title": "Hành trình cùng Tây Nguyên Chạm đến tương lai",
-    "desc": "Từ những cánh đồng cà phê Tây Nguyên, chúng tôi kết nối thiên nhiên với nền tảng công nghệ tiên phong và hệ thống blockchain — mang nông sản Việt đến thế giới, cùng người nông dân viết nên câu chuyện bền vững.",
+    "label": "Pioneering the digitization of agricultural assets",
+    "title": "A journey with the Central Highlands to touch the future",
+    "desc": "From the coffee fields of Vietnam’s Central Highlands, we connect nature with pioneering technology, bringing Vietnamese produce to the world while empowering farmers to write a sustainable story."
   },
-  "coming_soon": "Coming soon"
+  "home": {
+    "hero": {
+      "label": "Pioneering the digitization of agricultural assets",
+      "title": "A journey with the Central Highlands to touch the future",
+      "desc": "From the coffee fields of Vietnam’s Central Highlands, we connect nature with pioneering technology, bringing Vietnamese produce to the world while empowering farmers to write a sustainable story."
+    },
+    "sectionTwo": {
+      "title_line_1": "A journey to the world,",
+      "title_line_2": "shaping Vietnamese agriculture",
+      "paragraph_1": "On the red soil of Gia Lai, we planted our first seeds—not only coffee and durian, but also a dream of sustainable agriculture. With pioneering Israeli technology, we care for every crop, make every season transparent, and work with Central Highlands farmers to write a story that reaches far beyond the fields.",
+      "paragraph_2": "Today is Gia Lai, tomorrow is the Central Highlands, and beyond that, Vietnamese produce on tables around the world."
+    },
+    "sectionThree": {
+      "title": "Enduring value from land and people",
+      "cards": {
+        "nature": {
+          "title": "Abundant nature",
+          "desc": "The fields of Gia Lai are where rich basalt soil nurtures bold coffee flavors and fragrant, sweet durian. We combine cultivation with land restoration and conservation so the soil remains fertile for generations."
+        },
+        "technology": {
+          "title": "Pioneering technology",
+          "desc": "We apply modern technologies such as monitoring drones, smart sensors, and transparent blockchain to lay the foundation for the agriculture of tomorrow, rooted in the essence of Vietnamese land."
+        },
+        "community": {
+          "title": "Sustainable community",
+          "desc": "We support Central Highlands farmers through cultivation, professional training, and employment opportunities. Every plant is a smile; every harvest is a story."
+        },
+        "global": {
+          "title": "Global vision",
+          "desc": "Together with agricultural partners and experts from Israel and Europe, we bring Vietnamese produce to families around the world and elevate the value of agriculture."
+        }
+      }
+    },
+    "sectionFour": {
+      "strategic_partners": "Strategic Partners",
+      "active_projects": "Projects in Progress"
+    },
+    "sectionFive": {
+      "eyebrow": "Farmblock technology",
+      "title": "Technology shaping the future of agriculture",
+      "cards": {
+        "connect": {
+          "title": "Connected from anywhere",
+          "desc": "Our mobile application connects the fields to you anytime, anywhere—showing crop progress and technical data, with everything within reach."
+        },
+        "transparency": {
+          "title": "Transparency from the source",
+          "desc": "Every coffee bean and durian tells its story through QR codes. Blockchain preserves trust from the red soil of the Central Highlands to the customer’s hands."
+        },
+        "smart_care": {
+          "title": "Smart care",
+          "desc": "With sensors, cameras, and real-time operational data, FarmBlock continuously monitors crop health, optimizes irrigation, and enables more precise cultivation at every stage of growth."
+        },
+        "sustainability": {
+          "title": "Sustainable by nature",
+          "desc": "With solar power and an automated irrigation network that follows international nature-protection criteria, we help preserve the environment for future generations."
+        }
+      }
+    },
+    "sectionSix": {
+      "eyebrow": "The Farmblock ecosystem",
+      "title": "Building together, sharing value",
+      "cards": {
+        "investors": {
+          "title": "Investors",
+          "desc": "Access the agricultural market through diversified investment portfolios, clear legal structures, stable cash flows, and transparent monitoring systems."
+        },
+        "producers": {
+          "title": "Farmblock & agricultural producers",
+          "desc": "Coordinate farm operations, apply monitoring technology, and standardize cultivation data to optimize efficiency at scale."
+        },
+        "trade": {
+          "title": "Trade & distribution partners",
+          "desc": "Connect certified produce to markets while supporting a more transparent supply chain and traceability system."
+        },
+        "research": {
+          "title": "Research & education organizations",
+          "desc": "Test new products, services, or ideas on real growing areas—from agricultural technology to experiential tourism, media, and education."
+        },
+        "partners": {
+          "title": "Domestic agricultural development partners",
+          "desc": "Exchange knowledge and receive high-tech transfers with Israel Agrotech teams and experts from Europe."
+        }
+      }
+    },
+    "sectionSeven": {
+      "eyebrow": "Why partner with Farmblock?",
+      "title_line_1": "Trust begins with a",
+      "title_line_2": "transparent ecosystem",
+      "desc": "Farmblock does more than connect links in the agricultural value chain; it restructures the entire system with technology, data, and practical operating logic. From production to distribution, every element is digitized, standardized, and synchronized in real time to create a unified, transparent ecosystem that can scale and be replicated with ease.",
+      "integrated_blocks": "6 functional blocks integrated & operated in sync",
+      "transparent_data": "100% of data stored transparently on the FarmBlock platform"
+    },
+    "sectionEleven": {
+      "title": "Download the FarmBlock App Today!",
+      "desc": "Manage your farm operations anytime, anywhere. Monitor activity, track progress, and stay connected with the FarmBlock team through a simple, convenient mobile application.",
+      "app_store_aria": "Download on the App Store",
+      "google_play_aria": "Get it on Google Play",
+      "image_alt": "FarmBlock mobile application interface"
+    },
+    "sectionTen": {
+      "title": "Let’s continue the story of the Central Highlands together",
+      "paragraph_1": "FarmBlock is a high-tech agriculture project where nature, people, and technology come together to create lasting value.",
+      "paragraph_2": "Contact us to discover how you can become part of this journey."
+    }
+  },
+  "about": {
+    "sectionOne": {
+      "eyebrow": "About Us",
+      "title": "From red soil to a brighter future",
+      "desc": "On fertile basalt soil, we plant seeds of sustainability, connect nature with technology, and work with Central Highlands farmers to write a story that reaches the world."
+    },
+    "sectionTwo": {
+      "title": "From the rich red basalt soil",
+      "paragraph_1": "The Central Highlands is a red-basalt region where bold coffee beans and sweet durian grow in a tropical highland climate. More than 30 hectares of fertile land here is where we began—not simply to grow crops, but to plant the seeds of sustainable agriculture.",
+      "paragraph_2": "We believe agriculture is not only cultivation; it is a story about people, nature, and the future.",
+      "paragraph_3": "With the dedication of Central Highlands farmers and pioneering Israeli technology, we care for every stretch of soil and make every harvest transparent, opening a path for Vietnamese produce to reach family tables around the world.",
+      "paragraph_4": "We dream of smart fields where nature and technology work in harmony, and every farmer is a hero.",
+      "collaboration_eyebrow": "Partnering for sustainability",
+      "collaboration_title": "We move forward with the pioneers"
+    },
+    "sectionThree": {
+      "title_line_1": "A mission to protect,",
+      "title_line_2": "a vision that reaches far",
+      "mission": "FarmBlock exists to protect the land, honor farmers, and make agriculture more transparent. Every crop is a commitment to nature; every harvest is a promise to the community.",
+      "support": "We support Central Highlands farmers, bring technology to every field, and bring clean produce to every family.",
+      "cards": {
+        "nature": "Protect nature",
+        "farmers": "Honor farmers",
+        "transparency": "Transparent agriculture"
+      }
+    },
+    "sectionFour": {
+      "eyebrow": "People - The soul of the project",
+      "title": "The people who plant the future",
+      "slides": {
+        "farmers": {
+          "title": "Central Highlands farmers",
+          "content": "After a lifetime devoted to red basalt soil, they are the soul of the Central Highlands. With deep experience and an instinctive love for nature, farmers care for every coffee tree and durian fruit by hand, bringing each harvest to life."
+        },
+        "experts": {
+          "title": "Agricultural experts",
+          "content": "With years of experience and respected certifications and awards in agriculture, Farmblock’s experts combine practical knowledge with modern technology to ensure every plot receives the best possible care."
+        },
+        "technology": {
+          "title": "Technology team",
+          "content": "Built on strong foundations in automation, blockchain, and data, our young engineers bring smart technology to the Central Highlands, make agriculture transparent, and connect red-soil fields with global markets."
+        }
+      }
+    },
+    "sectionFive": {
+      "title": "A journey reaching farther",
+      "timeline": {
+        "first": {
+          "title": "Milestone 1: 2025",
+          "sub": "Sample gardens begin",
+          "content": "On the red soil of Gia Lai, we planted our first seeds, combining Central Highlands traditions with modern automation technology."
+        },
+        "second": {
+          "title": "Milestone 2: 2028",
+          "sub": "200ha of smart farming",
+          "content": "Expanding to 200 hectares, we will build smart farms where drones, sensor systems, and blockchain bring transparency to agriculture."
+        },
+        "future": {
+          "title": "Milestone 3: The future",
+          "sub": "Global Vietnamese produce",
+          "content": "We will bring high-quality Vietnamese coffee and durian to family tables around the world, continuing the story of red soil and the people who care for it."
+        }
+      }
+    },
+    "sectionSix": {
+      "title": "Farmer's Handbook"
+    }
+  },
+  "model": {
+    "sectionOne": {
+      "eyebrow": "Operating model",
+      "title": "FarmBlock farm system"
+    },
+    "sectionTwo": {
+      "title_line_1": "From the field to",
+      "title_line_2": "a complete ecosystem",
+      "paragraph": "Farmblock builds real growing areas directly owned by local producers, where modern technology, standards, and governance are applied to improve efficiency, make processes transparent, and connect every operation across the system. The model has been deployed in the Central Highlands and continues to expand across diverse ecosystems, becoming the field infrastructure of the Farmblock ecosystem."
+    },
+    "sectionThree": {
+      "title": "Applying modern cultivation methods",
+      "blocks": {
+        "planning": {
+          "title": "Structured planning",
+          "content": "Growing areas are designed with guidance from domestic and international agricultural experts, following a long-term direction with clearly defined functional zones."
+        },
+        "crops": {
+          "title": "Diverse crop portfolio",
+          "content": "Crop varieties are selected based on ecological characteristics and seasonal performance, combining specialty crops, perennial crops, and short-cycle crops in a balanced intercropping model."
+        },
+        "yield": {
+          "title": "High-yield varieties",
+          "content": "We use new crop varieties that have been researched and experimentally validated to increase yields, reduce risk, and optimize care conditions."
+        },
+        "quality": {
+          "title": "Trusted quality standards",
+          "content": "Cultivation processes are designed to operate toward modern standards such as GlobalG.A.P, ISO 22000, and HACCP, ensuring consistent quality aligned with market needs."
+        }
+      }
+    },
+    "sectionFour": {
+      "title": "A replicable sample-farm model",
+      "paragraph_1": "Growing areas in the Farmblock system are designed as sample-farm models—with disciplined production processes, integrated technology infrastructure, and clear quality standards. This foundation enables Farmblock to replicate models, transfer know-how, and expand investment, production, or research partnerships in specific regions.",
+      "paragraph_2": "Connect with us to plan, operate, and scale a sample-farm model in your locality!",
+      "cta": "Partner with us"
+    },
+    "sectionFive": {
+      "title": "Real images from Farmblock growing areas",
+      "description_before": "The images below were captured across growing areas in the",
+      "description_after": "system—where production models, crop varieties, and technology infrastructure are being applied, monitored, and developed step by step."
+    },
+    "sectionSix": {
+      "title": "See it yourself, trust it deeply",
+      "paragraph_1": "Farmblock lets you follow real cultivation activities—from planting and irrigation progress to environmental data and live images from growing areas. Everything is continuously updated from sensors and cameras across the farms.",
+      "paragraph_2": "No advertising needed—see for yourself how production happens every day!",
+      "cta": "Visit Sample Garden"
+    }
+  },
+  "contact": {
+    "hero": {
+      "eyebrow": "Contact",
+      "title_line_1": "Connect with the Central Highlands,",
+      "title_line_2": "where red soil tells stories",
+      "desc": "We are here to hear your story, share a vision for sustainable agriculture, and help you discover lasting value from the rich red basalt soil."
+    },
+    "sectionTwo": {
+      "title": "Start the journey with us!",
+      "paragraph_1": "Do you love nature, care about sustainable investment, and feel passionate about advanced technology models?",
+      "paragraph_2": "Would you like to understand how we connect Central Highlands red soil with the latest advances in technology—or simply stand among coffee fields and hear the stories of local farmers?",
+      "paragraph_3": "Tell us what you are looking for—we are always ready to listen and walk alongside you.",
+      "paragraph_4": "From today toward 200 hectares tomorrow, Farmblock’s journey is wide open, and we invite you to continue writing this story of sustainable growth—from every tree to every real value."
+    }
+  },
+  "blog": {
+    "hero": {
+      "label": "Farmer's Handbook",
+      "title": "Stories from the digital field",
+      "desc": "News, perspectives, and updates from FarmBlock’s journey to digitize agriculture."
+    },
+    "loading": "Loading articles...",
+    "error": "Unable to load the article list. Please try again later.",
+    "empty": "No articles yet.",
+    "read_more": "Read more →",
+    "back": "← Back to Farmer's Handbook",
+    "not_found": "Article not found.",
+    "pagination_previous": "Previous",
+    "pagination_next": "Next",
+    "description": "News and updates from FarmBlock on digital agriculture and the Central Highlands.",
+    "detail_fallback_title": "Farmer's Handbook | FarmBlock"
+  },
+  "policy": {
+    "title": "FarmBlock Privacy Policy",
+    "effective_date": "Effective Date",
+    "last_updated": "Last Updated",
+    "description": "How FarmBlock collects, uses, stores, shares, and protects personal information."
+  }
 }

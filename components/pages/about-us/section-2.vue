@@ -4,18 +4,18 @@
       <div data-aos="fade-in" data-aos-delay="200" class="grid w-full grid-cols-1 sm:grid-cols-2 overflow-hidden rounded-[0.5rem]">
         <img class="h-full w-full object-cover" src="@/assets/images/pages/about-me/img-section-2-1.webp" alt="img">
         <div class="block-content-img">
-          <p class="text-[1.5rem] sm:text-[2.625rem] font-bold leading-[140%] text-[#B4E27E] text-center">Từ miền đất đỏ bazan trù phú</p>
+          <p class="text-[1.5rem] sm:text-[2.625rem] font-bold leading-[140%] text-[#B4E27E] text-center">{{ $t('about.sectionTwo.title') }}</p>
           <div class="flex flex-col gap-4">
-            <p v-for="item in listTextContent" class="text-[0.875rem] sm:text-[1.125rem] font-normal leading-[140%] text-[#F0F9E5]">
+            <p v-for="(item, index) in listTextContent" :key="index" class="text-[0.875rem] sm:text-[1.125rem] font-normal leading-[140%] text-[#F0F9E5]">
               {{ item }}
             </p>
           </div>
         </div>
       </div>
       <!-- <div data-aos="fade-in" data-aos-delay="200" class="flex flex-col justify-center items-center gap-6 sm:gap-[4rem]">
-        <p class="text-[1rem] sm:text-[2rem] font-bold text-[#B4E27E]">Hợp tác vì sự bền vững</p>
+        <p class="text-[1rem] sm:text-[2rem] font-bold text-[#B4E27E]">{{ $t('about.sectionTwo.collaboration_eyebrow') }}</p>
         <p class="mt-[-1rem] sm:mt-[-3rem] text-[1.75rem] sm:text-[3.5rem] mobile:text-center font-bold leading-[135%] text-[#F0F9E5]">
-          Chúng tôi đồng hành cùng những người tiên phong
+          {{ $t('about.sectionTwo.collaboration_title') }}
         </p>
         <div class="w-full h-[1px] bg-[#2D6639] sm:bg-[#204D2B]" />
         <div class="w-full flex flex-col gap-6 sm:gap-[4rem] justify-center items-center overflow-hidden">
@@ -60,31 +60,15 @@
 </template>
 
 <script setup lang="ts">
-import iconLogoWhite from '@/assets/icons/common/logo-white.svg'
-import SlideInfinity from '~/components/pages/about-me/slide-infinity.vue'
-import { multiArray } from '~/utils/utils'
-const isMobile = useMobile()
+const { t } = useI18n()
 
-const listTextContent = ref([
-  'Tây Nguyên là vùng đất đỏ bazan nơi những hạt cà phê đậm đà và những trái sầu riêng ngọt ngào lớn lên với khí hậu nhiệt đới gió mùa cao nguyên. Hơn 30ha đất đai trù phú ở đây là nơi chúng tôi bắt đầu, không chỉ để trồng cây, mà để gieo trồng những hạt giống của một nền nông nghiệp bền vững.',
-  'Chúng tôi tin rằng nông nghiệp không chỉ là canh tác, mà là câu chuyện về con người, thiên nhiên, và tương lai.',
-  'Với tâm huyết của nông dân Tây Nguyên và công nghệ tiên phong từ Israel, chúng tôi chăm sóc từng luống đất, minh bạch từng vụ mùa, từ đó dẫn đường để mang nông sản Việt đến bàn ăn của các gia đình trên thế giới. ',
-  'Từ 30ha hôm nay, chúng tôi mơ về 200ha – một cánh đồng thông minh, nơi thiên nhiên và công nghệ hòa quyện, nơi mỗi người nông dân là một người anh hùng.',
+const listTextContent = computed(() => [
+  t('about.sectionTwo.paragraph_1'),
+  t('about.sectionTwo.paragraph_2'),
+  t('about.sectionTwo.paragraph_3'),
+  t('about.sectionTwo.paragraph_4'),
 ])
-const listCard1 = ref([
-  {
-    icon: iconLogoWhite,
-    text: 'FARMBLOCK',
-  },
-  {
-    icon: iconLogoWhite,
-    text: 'FARMBLOCK',
-  },
-  {
-    icon: iconLogoWhite,
-    text: 'FARMBLOCK',
-  },
-])
+
 </script>
 
 <style lang="scss">

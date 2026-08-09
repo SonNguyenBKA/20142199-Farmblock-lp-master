@@ -148,8 +148,8 @@ const menus = computed(() => [
   },
   {
     name: t('menu.technology'),
-    link: '/cong-nghe',
-    coming_soon: true,
+    link: '/blog',
+    coming_soon: false,
   },
   {
     name: t('menu.contact'),
@@ -189,9 +189,12 @@ const showMenuMobile = () => {
 const closeMenuMobile = () => {
   showMenuMb.value = false
 }
-const changeLanguage = async (lang: string) => {
+const changeLanguage = async (lang: 'vi' | 'en') => {
+  if (lang === currentLanguage.value) {
+    return
+  }
   currentLanguage.value = lang
-  // await setLocale(lang)
+  await setLocale(lang)
 }
 const scrollToTop = () => {
   window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })

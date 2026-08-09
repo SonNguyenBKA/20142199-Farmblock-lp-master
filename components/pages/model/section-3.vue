@@ -4,7 +4,7 @@
       <p
         class="block text-[1.75rem] font-bold leading-[130%] text-[#06280C] sm:hidden sm:text-[4rem] mobile:px-4 mobile:text-center"
       >
-        Áp dụng các phương pháp canh tác hiện đại
+        {{ $t('model.sectionThree.title') }}
       </p>
       <div class="w-full sm:w-[45%] sm:min-w-[32rem]">
         <img v-if="!isMobile" class="size-full" src="@/assets/images/pages/model/img-section-3-1.webp" alt="" />
@@ -22,7 +22,7 @@
           data-aos-delay="100"
           class="hidden text-[1.75rem] font-bold leading-[130%] text-[#06280C] sm:block sm:text-[4rem] mobile:px-4 mobile:text-center"
         >
-          Áp dụng các phương pháp canh tác hiện đại
+          {{ $t('model.sectionThree.title') }}
         </p>
         <div class="grid w-full grid-cols-1 gap-4 sm:grid-cols-2">
           <div
@@ -113,37 +113,34 @@ import 'swiper/css/pagination'
 import 'swiper/css/navigation'
 import icon1 from '@/assets/icons/pages/model/section-3-1.svg'
 import icon2 from '@/assets/icons/pages/model/section-3-2.svg'
-import icon3_1 from '@/assets/icons/pages/model/section-3-3-1.svg'
-import icon3_2 from '@/assets/icons/pages/model/section-3-3-2.svg'
-import icon3_3 from '@/assets/icons/pages/model/section-3-3-3.svg'
+import icon3One from '@/assets/icons/pages/model/section-3-3-1.svg'
+import icon3Two from '@/assets/icons/pages/model/section-3-3-2.svg'
+import icon3Three from '@/assets/icons/pages/model/section-3-3-3.svg'
 import icon4 from '@/assets/icons/pages/model/section-3-4.svg'
 
 const isMobile = useMobile()
 const modules = [Scrollbar, A11y, EffectFade, Autoplay]
-const blocks = ref([
+const { t } = useI18n()
+const blocks = computed(() => [
   {
     icons: [icon1],
-    title: 'Quy hoạch bài bản',
-    content:
-      'Các vùng trồng được thiết kế dưới sự cố vấn của các chuyên gia nông nghiệp trong nước và quốc tế, với định hướng dài hạn và có các phân khu chức năng rõ ràng.',
+    title: t('model.sectionThree.blocks.planning.title'),
+    content: t('model.sectionThree.blocks.planning.content'),
   },
   {
     icons: [icon2],
-    title: 'Danh mục nông sản đa dạng',
-    content:
-      'Các giống cây được lựa chọn dựa trên đặc tính sinh thái và hiệu quả mùa vụ, kết hợp xen canh hợp lý giữa đặc sản, cây trồng lâu năm và cây trồng ngắn ngày.',
+    title: t('model.sectionThree.blocks.crops.title'),
+    content: t('model.sectionThree.blocks.crops.content'),
   },
   {
     icons: [icon4],
-    title: 'Giống cây năng suất cao',
-    content:
-      'Sử dụng các giống cây trồng mới, đã được nghiên cứu và kiểm chứng thực nghiệm, nhằm tăng năng suất, giảm rủi ro và tối ưu điều kiện chăm sóc.',
+    title: t('model.sectionThree.blocks.yield.title'),
+    content: t('model.sectionThree.blocks.yield.content'),
   },
   {
-    icons: [icon3_1, icon3_2, icon3_3],
-    title: 'Tiêu chuẩn chất lượng uy tín',
-    content:
-      'Quy trình canh tác được vận hành theo các tiêu chuẩn hiện đại như GlobalG.A.P, ISO 22000 và HACCP, đảm bảo chất lượng ổn định và phù hợp với nhu cầu của thị trường.',
+    icons: [icon3One, icon3Two, icon3Three],
+    title: t('model.sectionThree.blocks.quality.title'),
+    content: t('model.sectionThree.blocks.quality.content'),
   },
 ])
 const calcTimeAni = (index: number) => {

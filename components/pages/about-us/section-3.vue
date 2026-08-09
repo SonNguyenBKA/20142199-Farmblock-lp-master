@@ -11,8 +11,8 @@
       <div class="grid w-full grid-cols-1 gap-6 sm:grid-cols-2 sm:gap-[4rem]">
         <div data-aos="fade-in" class="flex flex-col gap-6">
           <h3 class="text-[1.625rem] font-bold text-default-primary sm:text-[4rem]">
-            Sứ mệnh gìn giữ, <br />
-            tầm nhìn vươn xa
+            {{ $t('about.sectionThree.title_line_1') }} <br />
+            {{ $t('about.sectionThree.title_line_2') }}
           </h3>
           <div v-if="isMobile" data-aos="fade-in" class="block-card">
             <div v-for="(card, index) in cards" :key="index" class="block-card--item">
@@ -22,12 +22,10 @@
           </div>
           <div class="flex flex-col gap-2 sm:gap-6">
             <p class="text-label-14-reg text-default-primary sm:text-body-18-reg">
-              Farmity tồn tại để bảo vệ đất đai, tôn vinh nông dân, và minh bạch hóa nông nghiệp. Mỗi cây trồng là một
-              cam kết với thiên nhiên, mỗi vụ mùa là một lời hứa với cộng đồng.
+              {{ $t('about.sectionThree.mission') }}
             </p>
             <p class="text-label-14-reg text-default-primary sm:text-body-18-reg">
-              Chúng tôi hỗ trợ nông dân Tây Nguyên, mang công nghệ đến từng luống đất, và đưa nông sản sạch đến mọi gia
-              đình.
+              {{ $t('about.sectionThree.support') }}
             </p>
           </div>
         </div>
@@ -55,24 +53,19 @@ import tvnd from '@/assets/icons/pages/about-me/tvnd.svg'
 
 const isMobile = useMobile()
 
-const textContents = ref([
-  'Sứ mệnh gìn giữ, <br> tầm nhìn vươn xa',
-  'Farmity  tồn tại để bảo vệ đất đai, tôn vinh nông dân, và minh bạch hóa nông nghiệp. Mỗi cây trồng là một cam kết với thiên nhiên, mỗi vụ mùa là một lời hứa với cộng đồng.',
-  'Chúng tôi hỗ trợ nông dân Tây Nguyên, mang công nghệ đến từng luống đất, và đưa nông sản sạch đến mọi gia đình.',
-])
-
-const cards = ref([
+const { t } = useI18n()
+const cards = computed(() => [
   {
     icon: bvtn,
-    text: 'Bảo vệ thiên nhiên',
+    text: t('about.sectionThree.cards.nature'),
   },
   {
     icon: mbhnn,
-    text: 'Tôn vinh nông dân',
+    text: t('about.sectionThree.cards.farmers'),
   },
   {
     icon: tvnd,
-    text: 'Minh bạch hoá nông nghiệp',
+    text: t('about.sectionThree.cards.transparency'),
   },
 ])
 </script>

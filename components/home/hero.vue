@@ -25,15 +25,14 @@
             data-aos-delay="300"
             class="text-center text-heading-36-bold text-brand-secondary md:text-start md:text-heading-72-bold"
           >
-            Hành trình cùng Tây Nguyên Chạm đến tương lai
+            {{ $t('home.hero.title') }}
           </h1>
           <p
             data-aos="fade-down"
             data-aos-delay="500"
             class="text-center text-label-14-reg text-brand-secondary md:text-start md:text-body-24-reg"
           >
-            Từ những cánh đồng cà phê Tây Nguyên, chúng tôi kết nối thiên nhiên với nền tảng công nghệ tiên phong và hệ
-            thống blockchain — mang nông sản Việt đến thế giới, cùng người nông dân viết nên câu chuyện bền vững.
+            {{ $t('home.hero.desc') }}
           </p>
         </div>
         <common-button
@@ -59,7 +58,6 @@
 import backgroundHero from '@/assets/videos/hero.mp4'
 
 const { handleRedirect } = useRedirect()
-const { t } = useI18n()
 </script>
 
 <style lang="scss" scoped>

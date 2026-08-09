@@ -7,12 +7,12 @@
     <div class="model-section-4--layer3">
       <div class="block-content max-w-content" data-aos="fade-in" data-aos-delay="500">
         <div class="flex flex-col justify-center items-center gap-6 max-w-[67rem]">
-          <p class="text-[#06280C] text-[2.25rem] sm:text-[4rem] font-bold leading-[140%]">Mô hình trại mẫu dễ dàng nhân rộng</p>
+          <p class="text-[#06280C] text-[2.25rem] sm:text-[4rem] font-bold leading-[140%]">{{ $t('model.sectionFour.title') }}</p>
           <div class="flex flex-col gap-2">
-            <p class="text-[#06280C] text-center text-[0.875rem] sm:text-[1.125rem] font-medium leading-[140%]">Các vùng trồng trong hệ thống Farmblock được thiết kế như các mô hình trại mẫu – với quy trình sản xuất bài bản, hạ tầng công nghệ tích hợp và tiêu chuẩn chất lượng rõ ràng. Đây là nền tảng để Farmblock có thể nhân rộng, chuyển giao kỹ thuật và mở rộng hợp tác đầu tư, sản xuất hoặc nghiên cứu theo từng khu vực cụ thể.</p>
-            <p class="text-[#06280C] text-center text-[0.875rem] sm:text-[1.125rem] font-medium leading-[140%]">Hãy hết nối cùng chúng tôi để hợp tác quy hoạch, vận hành và mở rộng mô hình trại mẫu tại địa phương của bạn!</p>
+            <p class="text-[#06280C] text-center text-[0.875rem] sm:text-[1.125rem] font-medium leading-[140%]">{{ $t('model.sectionFour.paragraph_1') }}</p>
+            <p class="text-[#06280C] text-center text-[0.875rem] sm:text-[1.125rem] font-medium leading-[140%]">{{ $t('model.sectionFour.paragraph_2') }}</p>
           </div>
-          <common-button class="w-fit" :text="'Liên hệ hợp tács'" :extra-class="['']" @click="handleRedirect('/contact', false, false)">
+          <common-button class="w-fit" :text="$t('model.sectionFour.cta')" :extra-class="['']" @click="handleRedirect('/contact', false, false)">
             <template #append>
               <span class="size-[1.5rem]">
                 <img src="@/assets/icons/arrow-right-default.svg" alt="" class="h-auto w-full object-cover" />
@@ -26,8 +26,6 @@
 </template>
 
 <script setup lang="ts">
-import { messageInfo } from '~/utils/utils'
-
 const { handleRedirect } = useRedirect()
 </script>
 

@@ -20,23 +20,13 @@
       >
         <div data-aos="fade-right" class="flex w-full flex-col gap-4 md:w-1/2 md:gap-6">
           <h3 class="text-heading-32-bold text-brand-primary md:text-heading-56-bold">
-            Hãy bắt đầu hành trình cùng chúng tôi!
+            {{ $t('contact.sectionTwo.title') }}
           </h3>
           <div class="flex flex-col gap-2 md:gap-4">
-            <p class="text-label-14-reg text-inverse-primary md:text-body-18-reg">
-              Bạn yêu thiên nhiên, quan tâm đến đầu tư bền vững, đam mê các mô hình công nghệ tiên tiến?
-            </p>
-            <p class="text-label-14-reg text-inverse-primary md:text-body-18-reg">
-              Bạn muốn hiểu cách chúng tôi kết nối đất đỏ Tây Nguyên với những tiến bộ công nghệ mới nhất – hoặc đơn
-              giản là mong một lần đứng giữa cánh đồng cà phê, lắng nghe câu chuyện của người nông dân bản địa?
-            </p>
-            <p class="text-label-14-reg text-inverse-primary md:text-body-18-reg">
-              Hãy chia sẻ điều bạn tìm kiếm – chúng tôi luôn sẵn sàng lắng nghe và đồng hành.
-            </p>
-            <p class="text-label-14-reg text-inverse-primary md:text-body-18-reg">
-              Từ 30 ha hôm nay đến 200 ha ngày mai, hành trình của Farmblock đang rộng mở – và chúng tôi mời bạn cùng
-              viết tiếp câu chuyện phát triển bền vững ấy, từ từng gốc cây đến những giá trị thật.
-            </p>
+            <p class="text-label-14-reg text-inverse-primary md:text-body-18-reg">{{ $t('contact.sectionTwo.paragraph_1') }}</p>
+            <p class="text-label-14-reg text-inverse-primary md:text-body-18-reg">{{ $t('contact.sectionTwo.paragraph_2') }}</p>
+            <p class="text-label-14-reg text-inverse-primary md:text-body-18-reg">{{ $t('contact.sectionTwo.paragraph_3') }}</p>
+            <p class="text-label-14-reg text-inverse-primary md:text-body-18-reg">{{ $t('contact.sectionTwo.paragraph_4') }}</p>
           </div>
         </div>
         <div data-aos="fade-left" class="flex w-full flex-1 flex-col justify-between gap-6 md:w-1/2">
@@ -49,27 +39,27 @@
           >
             <div class="grid grid-cols-1 items-stretch gap-2 md:grid-cols-2">
               <el-form-item prop="gender">
-                <el-select v-model="form.gender" placeholder="Giới tính *">
-                  <el-option label="Anh" value="male" />
-                  <el-option label="Chị" value="female" />
-                  <el-option label="Khác" value="other" />
+                <el-select v-model="form.gender" :placeholder="$t('forms.gender')">
+                  <el-option :label="$t('forms.male')" value="male" />
+                  <el-option :label="$t('forms.female')" value="female" />
+                  <el-option :label="$t('forms.other')" value="other" />
                 </el-select>
               </el-form-item>
               <el-form-item prop="username">
-                <el-input v-model="form.username" placeholder="Họ và tên *" />
+                <el-input v-model="form.username" :placeholder="$t('forms.name')" />
               </el-form-item>
               <el-form-item prop="phone_number">
-                <el-input v-model="form.phone_number" placeholder="Số điện thoại *" />
+                <el-input v-model="form.phone_number" :placeholder="$t('forms.phone')" />
               </el-form-item>
               <el-form-item prop="email">
-                <el-input v-model="form.email" placeholder="E-Mail *" />
+                <el-input v-model="form.email" :placeholder="$t('forms.email')" />
               </el-form-item>
             </div>
             <el-form-item prop="message">
-              <el-input v-model="form.message" placeholder="Tin nhắn" type="textarea" :rows="5" />
+              <el-input v-model="form.message" :placeholder="$t('forms.message')" type="textarea" :rows="5" />
             </el-form-item>
           </el-form>
-          <common-button :text="'Liên hệ'" :extra-class="['']" @click="submitForm()">
+          <common-button :text="$t('btn.contact')" :extra-class="['']" @click="submitForm()">
             <template #append>
               <span class="size-[1.5rem]">
                 <img src="@/assets/icons/arrow-right-default.svg" alt="" class="h-auto w-full object-cover" />
@@ -104,20 +94,8 @@ import type { FormRules, FormInstance } from 'element-plus'
 import imageBackground from '@/assets/images/bg-contact.webp'
 
 const isMobile = useMobile()
-const contact = [
-  {
-    key: 'Địa chỉ:',
-    value: 'Tầng 4 tòa Mai Linh Đông Đô, 499 Lương Thế Vinh, Phường Đại Mỗ, Thành phố Hà Nội, Việt Nam',
-  },
-  {
-    key: 'Số điện thoại:',
-    value: '+841-900-247-05',
-  },
-  {
-    key: 'E-Mail:',
-    value: 'Contact@farmblock.vn',
-  },
-]
+const { t } = useI18n()
+
 const formRef = ref<FormInstance>()
 const form = reactive({
   gender: '',
@@ -141,7 +119,7 @@ const rules = reactive<FormRules>({
 })
 const submitForm = () => {
   formRef.value?.resetFields()
-  messageInfo('Coming soon')
+  messageInfo(t('common.coming_soon'))
   // formRef.value?.validate((valid: any) => {
   //   if (valid) {
   //     console.log(form)

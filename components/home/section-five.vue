@@ -5,10 +5,10 @@
     >
       <div class="max-w-content flex w-full flex-col items-center justify-center gap-1">
         <p class="text-center text-body-16-bold text-neutral-primary md:text-heading-32-bold">
-          Công nghệ của Farmblock
+          {{ $t('home.sectionFive.eyebrow') }}
         </p>
         <h3 class="text-center text-body-28-bold text-default-primary md:text-heading-64-bold">
-          Công nghệ định hình tương lai nông nghiệp
+          {{ $t('home.sectionFive.title') }}
         </h3>
       </div>
       <div class="flex w-full flex-1 flex-col gap-6 md:gap-[4rem]">
@@ -92,13 +92,6 @@
           </button>
         </div>
       </div>
-      <common-button :text="'Khám phá công nghệ'" :extra-class="['']" @click="handleRedirect('/', false, true)">
-        <template #append>
-          <span class="size-[1.5rem]">
-            <img src="@/assets/icons/arrow-right-default.svg" alt="" class="h-auto w-full object-cover" />
-          </span>
-        </template>
-      </common-button>
     </div>
   </div>
 </template>
@@ -114,29 +107,29 @@ import imageCard02 from '@/assets/images/image-section-five-card-02.webp'
 import imageCard03 from '@/assets/images/image-section-five-card-03.webp'
 import imageCard04 from '@/assets/images/image-section-five-card-04.webp'
 
-const { handleRedirect } = useRedirect()
-const listCard = [
+const { t } = useI18n()
+const listCard = computed(() => [
   {
-    title: 'Kết nối từ bất kì đâu',
-    desc: 'Ứng dụng di động kết nối cánh đồng đến với bạn bất kì khi nào, tại bất kì đâu — hiển thị tiến độ phát triển, thông số kĩ thuật – mọi thứ đều nằm trong tầm tay bạn,',
+    title: t('home.sectionFive.cards.connect.title'),
+    desc: t('home.sectionFive.cards.connect.desc'),
     image: imageCard01,
   },
   {
-    title: 'Minh bạch từ gốc',
-    desc: 'Mỗi hạt cà phê, mỗi trái sầu riêng kể câu chuyện của mình qua các mã QR. Công nghệ blockchain lưu giữ niềm tin, từ đất đỏ Tây Nguyên đến tận tay khách hàng.',
+    title: t('home.sectionFive.cards.transparency.title'),
+    desc: t('home.sectionFive.cards.transparency.desc'),
     image: imageCard02,
   },
   {
-    title: 'Chăm sóc thông minh',
-    desc: 'Drone lượn trên cánh đồng, hệ thống cảm biến theo dõi đất và cây — công nghệ giúp nông dân chăm sóc vụ mùa một cách chính xác để đất đai mãi trù phú.',
+    title: t('home.sectionFive.cards.smart_care.title'),
+    desc: t('home.sectionFive.cards.smart_care.desc'),
     image: imageCard03,
   },
   {
-    title: 'Bền vững từ thiên nhiên',
-    desc: 'Với hệ thống pin mặt trời và mạng lưới tưới tiêu tự động, tuân thủ các tiêu chí bảo vệ thiên nhiên chuẩn quốc tế, chúng tôi mãi gìn giữ thiên nhiên cho thế hệ mai sau.',
+    title: t('home.sectionFive.cards.sustainability.title'),
+    desc: t('home.sectionFive.cards.sustainability.desc'),
     image: imageCard04,
   },
-]
+])
 const modules = [Autoplay]
 const swiperIns = ref()
 

@@ -8,18 +8,16 @@
             <img class="size-[2rem] sm:size-[4rem]" src="@/assets/icons/common/logo-square.svg" alt="" />
             <p class="text-[1.5rem] font-semibold text-[#FFF] sm:text-[2rem]">FARMBLOCK</p>
           </div>
-          <p class="text-[2rem] font-bold leading-[140%] text-[#B4E27E] sm:text-[3.5rem]">Thấy tận mắt tin tận tâm</p>
+          <p class="text-[2rem] font-bold leading-[140%] text-[#B4E27E] sm:text-[3.5rem]">{{ $t('model.sectionSix.title') }}</p>
           <div class="flex flex-col gap-4">
             <p class="text-[0.875rem] font-normal leading-[140%] text-[#FFF] sm:text-[1.125rem]">
-              Farmblock cho phép bạn theo dõi trực tiếp các hoạt động canh tác thực tế – từ tiến độ gieo trồng, tưới
-              tiêu, đến dữ liệu môi trường và hình ảnh thực tế tại các vùng trồng. Tất cả được cập nhật liên tục từ hệ
-              thống cảm biến và camera tại nông trại.
+              {{ $t('model.sectionSix.paragraph_1') }}
             </p>
             <p class="text-[1.125rem] font-normal leading-[140%] text-[#FFF]">
-              Không cần quảng cáo, giờ đây, hãy tự mình nhìn quy trình sản xuất đang diễn ra mỗi ngày!
+              {{ $t('model.sectionSix.paragraph_2') }}
             </p>
           </div>
-          <common-button class="w-fit sm:w-full" :text="'Truy cập ứng dụng'" @click="messageInfo('Coming soon')">
+          <common-button class="w-fit sm:w-full" :text="$t('model.sectionSix.cta')" @click="handleRedirect(sampleGardenUrl, true)">
             <template #append>
               <span class="size-[1.5rem]">
                 <img src="@/assets/icons/arrow-right-default.svg" alt="" class="h-auto w-full object-cover" />
@@ -33,7 +31,8 @@
 </template>
 
 <script setup lang="ts">
-import { messageInfo } from '~/utils/utils'
+const { handleRedirect } = useRedirect()
+const sampleGardenUrl = 'https://vuonmau.farmblock.vn/'
 </script>
 
 <style lang="scss">

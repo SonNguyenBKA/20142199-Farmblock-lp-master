@@ -1,20 +1,20 @@
 <template>
   <div class="page-blog-detail">
-    <div v-if="pending" class="page-blog-detail__state max-w-content">Đang tải bài viết...</div>
+    <div v-if="pending" class="page-blog-detail__state max-w-content">{{ $t('blog.loading') }}</div>
     <div v-else-if="error || !post" class="page-blog-detail__state max-w-content page-blog-detail__state--error">
-      Không tìm thấy bài viết.
-      <NuxtLink to="/blog" class="page-blog-detail__back">← Quay lại Blog</NuxtLink>
+      {{ $t('blog.not_found') }}
+      <NuxtLink to="/blog" class="page-blog-detail__back">{{ $t('blog.back') }}</NuxtLink>
     </div>
     <article v-else class="page-blog-detail__article">
       <header class="page-blog-detail__hero">
         <div class="max-w-content page-blog-detail__hero-inner">
-          <NuxtLink to="/blog" class="page-blog-detail__back">← Quay lại Blog</NuxtLink>
+          <NuxtLink to="/blog" class="page-blog-detail__back">{{ $t('blog.back') }}</NuxtLink>
           <time class="page-blog-detail__date">{{ formatDate(post.published_at) }}</time>
           <h1 class="text-heading-36-bold text-brand-secondary md:text-heading-56-bold">
             {{ post.title }}
           </h1>
           <p v-if="post.excerpt" class="page-blog-detail__excerpt">{{ post.excerpt }}</p>
-          <p v-if="post.author?.name" class="page-blog-detail__author">Bởi {{ post.author.name }}</p>
+          <p v-if="post.author?.name" class="page-blog-detail__author">{{ $t('common.by') }} {{ post.author.name }}</p>
         </div>
       </header>
 
@@ -31,28 +31,31 @@
 const route = useRoute()
 const slug = computed(() => route.params.slug as string)
 const { fetchBlogBySlug } = useBlogApi()
+const { locale, t } = useI18n()
 
 const { data: post, pending, error } = await useAsyncData(
   'blog-detail',
   () => fetchBlogBySlug(slug.value),
-  { watch: [slug] },
+  { watch: [slug, locale] },
 )
 
 useHead(() => ({
   title: post.value?.meta_title || post.value?.title
     ? `${post.value?.meta_title || post.value?.title} | FarmBlock`
-    : 'Blog | FarmBlock',
+    : t('blog.hero.label') + ' | FarmBlock',
   meta: [
     {
       name: 'description',
-      content: post.value?.meta_description || post.value?.excerpt || 'FarmBlock Blog',
+      content: post.value?.meta_description || post.value?.excerpt || t('blog.description'),
     },
   ],
 }))
 
 const formatDate = (value: string | null) => {
-  if (!value) return ''
-  return new Date(value).toLocaleDateString('vi-VN', {
+  if (!value) {
+    return ''
+  }
+  return new Date(value).toLocaleDateString(locale.value === 'vi' ? 'vi-VN' : 'en-US', {
     day: '2-digit',
     month: 'long',
     year: 'numeric',

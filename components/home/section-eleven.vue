@@ -5,11 +5,10 @@
     >
       <div class="flex w-full flex-col gap-4 md:max-w-[36.5rem] md:gap-6">
         <h3 class="text-center text-body-28-bold text-default-primary md:text-start md:text-heading-48-bold">
-          Hãy Tải Ứng Dụng FarmBlock Ngay Hôm Nay!
+          {{ $t('home.sectionEleven.title') }}
         </h3>
         <p class="text-center text-label-14-reg text-default-secondary md:text-start md:text-body-18-reg">
-          Quản lý hoạt động nông trại của bạn mọi lúc, mọi nơi. Theo dõi hoạt động, giám sát tiến độ và giữ liên lạc
-          với đội ngũ FarmBlock chỉ bằng một ứng dụng di động đơn giản và tiện lợi.
+          {{ $t('home.sectionEleven.desc') }}
         </p>
         <div class="flex items-center justify-center gap-3 md:justify-start md:gap-4">
           <a
@@ -17,7 +16,7 @@
             target="_blank"
             rel="noopener noreferrer"
             class="store-badge"
-            aria-label="Tải trên App Store"
+            :aria-label="$t('home.sectionEleven.app_store_aria')"
           >
             <img :src="appStoreBadge" alt="" class="h-[2.5rem] w-auto object-contain md:h-[3.5rem]" />
           </a>
@@ -26,7 +25,7 @@
             target="_blank"
             rel="noopener noreferrer"
             class="store-badge"
-            aria-label="Tải trên Google Play"
+            :aria-label="$t('home.sectionEleven.google_play_aria')"
           >
             <img :src="googlePlayBadge" alt="" class="h-[2.5rem] w-auto object-contain md:h-[3.5rem]" />
           </a>
@@ -35,7 +34,7 @@
       <div class="flex w-full justify-center md:flex-1 md:justify-end">
         <img
           :src="phonesImage"
-          alt="Giao diện ứng dụng FarmBlock trên điện thoại"
+          :alt="$t('home.sectionEleven.image_alt')"
           class="h-auto w-full max-w-[21.5rem] object-contain md:max-w-[42rem]"
         />
       </div>

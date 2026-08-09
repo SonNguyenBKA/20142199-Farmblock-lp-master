@@ -11,21 +11,19 @@
       >
         <div class="flex flex-col gap-2 md:gap-6">
           <h3 class="type-target text-body-24-bold text-neutral-secondary md:text-heading-42-bold">
-            Hành trình ra thế giới, <br class="hidden md:block" />
-            định hình nông sản Việt Nam
+            {{ $t('home.sectionTwo.title_line_1') }} <br class="hidden md:block" />
+            {{ $t('home.sectionTwo.title_line_2') }}
           </h3>
           <p id="two_block_1" class="text-label-14-reg text-default-primary md:text-body-18-reg">
-            Trên 30ha đất đỏ Gia Lai, chúng tôi gieo những hạt giống đầu tiên – không chỉ là cà phê, sầu riêng, mà là
-            giấc mơ về một nền nông nghiệp bền vững. Với công nghệ tiên phong từ Israel, chúng tôi chăm sóc từng cây
-            trồng, minh bạch từng vụ mùa, và cùng nông dân Tây Nguyên viết nên câu chuyện vươn xa.
+            {{ $t('home.sectionTwo.paragraph_1') }}
           </p>
           <p id="two_block_2" class="text-label-14-reg text-default-primary md:text-body-18-reg">
-            Hôm nay là 30ha, ngày mai là 200ha, và xa hơn là nông sản Việt trên bàn ăn toàn cầu
+            {{ $t('home.sectionTwo.paragraph_2') }}
           </p>
         </div>
         <common-button
           id="two_btn"
-          :text="'Khám phá hành trình'"
+          :text="$t('btn.discover_journey')"
           class="w-fit"
           :size="'sm'"
           :extra-class="[]"
@@ -82,7 +80,7 @@ onMounted(async () => {
     },
   })
 
-  function typeText(el: HTMLElement, html: string, onComplete: () => void, speed = 30) {
+  function typeText (el: HTMLElement, html: string, onComplete: () => void, speed = 30) {
     const tokens = html.match(/(<[^>]+>|[^<]+)/g) || []
     let output = ''
     let i = 0

@@ -2,12 +2,11 @@
   <section class="model-section-5">
     <div class="model-section-5--content">
       <div data-aos="fade-in" data-aos-delay="100" class="block-top">
-        <p class="text-[#06280C] text-[1.75rem] sm:text-[4rem] font-bold leading-[140%] sm:w-[70%] mobile:text-center">Những hình ảnh thực tế từ các vùng trồng của Farmblock</p>
+        <p class="text-[#06280C] text-[1.75rem] sm:text-[4rem] font-bold leading-[140%] sm:w-[70%] mobile:text-center">{{ $t('model.sectionFive.title') }}</p>
         <p class="text-[#06280C] text-[0.875rem] sm:text-[1.125rem] font-medium leading-[140%] sm:w-[30%] mobile:text-center">
-          Những hình ảnh dưới đây được ghi nhận tại các vùng trồng trong hệ thống
+          {{ $t('model.sectionFive.description_before') }}
           <span class="text-[#009E50] text-[0.875rem] sm:text-[1.125rem] font-bold leading-[140%]">Farmblock</span>
-          - nơi các mô hình sản xuất,
-          giống cây và hạ tầng công nghệ đang từng bước được áp dụng, giám sát và phát triển.
+          {{ $t('model.sectionFive.description_after') }}
         </p>
       </div>
       <div class="swiper-wrapper">
@@ -25,12 +24,10 @@
           :space-between="isMobile ? remToPx(1) : remToPx(2.625)"
           :modules="modules"
           @swiper="onSwiper"
-          @slide-change="onSlideChange"
         >
           <swiper-slide v-for="(item, index) in [...slides, ...slides]" :key="index">
             <div class="flex flex-col justify-center items-center gap-2">
               <img style="aspect-ratio: 68/42;" class="size-full rounded-[0.5rem] overflow-hidden" :src="isMobile ? item.img : item.img" alt="">
-              <p class="text-center text-[1rem] sm:text-[1.5rem] font-bold leading-[140%] px-2 mobile:p-4" :class="index === realIndex ? 'text-[#008242]' : 'text-[#06280C]'">{{ item.title }}</p>
             </div>
           </swiper-slide>
         </swiper>
@@ -64,29 +61,20 @@ const modules = [Navigation, Pagination, Scrollbar, A11y, EffectFade, Autoplay]
 
 const isMobile = useMobile()
 const swiperIns = ref()
-const realIndex = ref()
 const slides = ref([
   {
     img: bgSlide1,
-    title: 'Giống Robusta xanh lùn được sử dụng tại một số vùng trồng của Farmblock tại Lâm Đồng',
   },
   {
     img: bgSlide2,
-    title: 'Giống Robusta xanh lùn được sử dụng tại một số vùng trồng của Farmblock tại Lâm Đồng',
   },
   {
     img: bgSlide3,
-    title: 'Giống Robusta xanh lùn được sử dụng tại một số vùng trồng của Farmblock tại Lâm Đồng',
   },
 ])
 
 const onSwiper = (swiper) => {
   swiperIns.value = swiper
-  realIndex.value = swiper.realIndex
-}
-const onSlideChange = (swiper) => {
-  swiperIns.value = swiper
-  realIndex.value = swiper.realIndex
 }
 
 const getRemValue = () => {

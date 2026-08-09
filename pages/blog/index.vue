@@ -2,22 +2,22 @@
   <div class="page-blog">
     <section class="page-blog__hero">
       <div class="max-w-content page-blog__hero-inner">
-        <p class="text-body-16-bold text-brand-primary md:text-heading-32-bold">Blog</p>
+        <p class="text-body-16-bold text-brand-primary md:text-heading-32-bold">{{ $t('blog.hero.label') }}</p>
         <h1 class="text-heading-36-bold text-brand-secondary md:text-heading-72-bold">
-          Câu chuyện từ cánh đồng số
+          {{ $t('blog.hero.title') }}
         </h1>
         <p class="text-body-16-reg text-brand-secondary md:text-body-24-reg">
-          Tin tức, góc nhìn và cập nhật từ hành trình số hóa nông nghiệp của FarmBlock.
+          {{ $t('blog.hero.desc') }}
         </p>
       </div>
     </section>
 
     <section class="page-blog__list max-w-content">
-      <div v-if="pending" class="page-blog__state">Đang tải bài viết...</div>
+      <div v-if="pending" class="page-blog__state">{{ $t('blog.loading') }}</div>
       <div v-else-if="error" class="page-blog__state page-blog__state--error">
-        Không thể tải danh sách blog. Vui lòng thử lại sau.
+        {{ $t('blog.error') }}
       </div>
-      <div v-else-if="!posts.length" class="page-blog__state">Chưa có bài viết nào.</div>
+      <div v-else-if="!posts.length" class="page-blog__state">{{ $t('blog.empty') }}</div>
       <div v-else class="page-blog__grid">
         <article
           v-for="post in posts"
@@ -37,7 +37,7 @@
             <time class="page-blog__date">{{ formatDate(post.published_at) }}</time>
             <h2 class="page-blog__card-title">{{ post.title }}</h2>
             <p class="page-blog__card-excerpt">{{ post.excerpt }}</p>
-            <span class="page-blog__read-more">Đọc thêm →</span>
+            <span class="page-blog__read-more">{{ $t('blog.read_more') }}</span>
           </div>
         </article>
       </div>
@@ -48,7 +48,7 @@
           :disabled="page <= 1"
           @click="changePage(page - 1)"
         >
-          Trước
+          {{ $t('blog.pagination_previous') }}
         </button>
         <span>{{ page }} / {{ meta.last_page }}</span>
         <button
@@ -56,7 +56,7 @@
           :disabled="page >= meta.last_page"
           @click="changePage(page + 1)"
         >
-          Sau
+          {{ $t('blog.pagination_next') }}
         </button>
       </div>
     </section>
@@ -68,30 +68,33 @@ import type { BlogPost } from '~/types/blog'
 
 const router = useRouter()
 const { fetchBlogs } = useBlogApi()
+const { locale, t } = useI18n()
 const page = ref(1)
 
 const { data, pending, error } = await useAsyncData(
   'blogs-page',
   () => fetchBlogs(page.value),
-  { watch: [page] },
+  { watch: [page, locale] },
 )
 
 const posts = computed<BlogPost[]>(() => data.value?.data ?? [])
 const meta = computed(() => data.value?.meta)
 
-useHead({
-  title: 'Blog | FarmBlock',
+useHead(() => ({
+  title: t('blog.hero.label') + ' | FarmBlock',
   meta: [
     {
       name: 'description',
-      content: 'Tin tức và cập nhật từ FarmBlock về nông nghiệp số và Tây Nguyên.',
+      content: t('blog.description'),
     },
   ],
-})
+}))
 
 const formatDate = (value: string | null) => {
-  if (!value) return ''
-  return new Date(value).toLocaleDateString('vi-VN', {
+  if (!value) {
+    return ''
+  }
+  return new Date(value).toLocaleDateString(locale.value === 'vi' ? 'vi-VN' : 'en-US', {
     day: '2-digit',
     month: '2-digit',
     year: 'numeric',

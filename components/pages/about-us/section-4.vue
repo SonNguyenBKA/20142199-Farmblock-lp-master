@@ -2,8 +2,8 @@
   <section class="about-us-section-4">
     <div class="about-us-section-4--content max-w-content">
       <div class="flex flex-col items-center justify-center gap-1 sm:hidden">
-        <p class="text-body-16-bold text-[#008242]">Con người - Linh hồn của dự án</p>
-        <p class="text-center text-[1.625rem] font-bold text-default-primary">Những người gieo mầm tương lai</p>
+        <p class="text-body-16-bold text-[#008242]">{{ $t('about.sectionFour.eyebrow') }}</p>
+        <p class="text-center text-[1.625rem] font-bold text-default-primary">{{ $t('about.sectionFour.title') }}</p>
       </div>
       <div class="swiper-slide-img relative">
         <swiper
@@ -24,8 +24,8 @@
       </div>
       <div class="about-us-section-4--collapse">
         <div class="hidden sm:block">
-          <p class="text-title">Con người - Linh hồn của dự án</p>
-          <p class="text-content">Những người gieo mầm tương lai</p>
+          <p class="text-title">{{ $t('about.sectionFour.eyebrow') }}</p>
+          <p class="text-content">{{ $t('about.sectionFour.title') }}</p>
         </div>
         <el-collapse v-model="activeNames" accordion @change="handleChange">
           <el-collapse-item v-for="(item, index) in collapse" :key="index" :title="item.title" :name="index">
@@ -43,62 +43,42 @@
 import { ref } from 'vue'
 import type { CollapseModelValue } from 'element-plus'
 import { Swiper, SwiperSlide } from 'swiper/vue'
-import card1 from '@/assets/images/pages/about-me/card-section-4-1.webp'
-import card2 from '@/assets/images/pages/about-me/card-section-4-2.webp'
-import card3 from '@/assets/images/pages/about-me/card-section-4-3.webp'
-
-import card1Mb from '@/assets/images/pages/about-me/card-section-4-1-mb.webp'
-import card2Mb from '@/assets/images/pages/about-me/card-section-4-2-mb.webp'
-import card3Mb from '@/assets/images/pages/about-me/card-section-4-3-mb.webp'
-
 import 'swiper/css'
 import 'swiper/css/pagination'
 import 'swiper/css/navigation'
 import { A11y, EffectFade, Navigation, Pagination, Scrollbar } from 'swiper/modules'
+import card1 from '@/assets/images/pages/about-me/card-section-4-1.webp'
+import card2 from '@/assets/images/pages/about-me/card-section-4-2.webp'
+import card3 from '@/assets/images/pages/about-me/card-section-4-3.webp'
+import card1Mb from '@/assets/images/pages/about-me/card-section-4-1-mb.webp'
+import card2Mb from '@/assets/images/pages/about-me/card-section-4-2-mb.webp'
+import card3Mb from '@/assets/images/pages/about-me/card-section-4-3-mb.webp'
 
 const modules = [Navigation, Pagination, Scrollbar, A11y, EffectFade]
 
 const isMobile = useMobile()
-const slides = ref<any>([
+const { t } = useI18n()
+const slides = computed<any[]>(() => [
   {
     card: card1,
     cardMb: card1Mb,
-    title: 'Nông dân Tây Nguyên',
-    content:
-      'Dành cả cuộc đời gắn bó với miền đất đỏ bazan, họ là linh hồn của vùng đất Tây Nguyên. Với kinh nghiệm dày dặn và tình yêu bản năng dành cho thiên nhiên, người nông dân tự tay chăm sóc từng cây cà phê, từng trái sầu riêng, mang đến vụ mùa trù phú.',
+    title: t('about.sectionFour.slides.farmers.title'),
+    content: t('about.sectionFour.slides.farmers.content'),
   },
   {
     card: card2,
     cardMb: card2Mb,
-    title: 'Chuyên gia nông nghiệp',
-    content:
-      'Với nhiều năm kinh nghiệm trong nghề và các chứng chỉ, giải thưởng danh giá trong lĩnh vực nông nghiệp, đội ngũ chuyên gia của Farmblock kết hợp kiến thức thực tế với công nghệ hiện đại, đảm bảo mỗi luống đất đều được chăm sóc một cách tối ưu,',
+    title: t('about.sectionFour.slides.experts.title'),
+    content: t('about.sectionFour.slides.experts.content'),
   },
   {
     card: card3,
     cardMb: card3Mb,
-    title: 'Đội ngũ công nghệ',
-    content:
-      'Với nền tảng vững chắc về tự động hóa, blockchain và dữ liệu, đội ngũ kỹ sư trẻ của chúng tôi mang hệ thống công nghệ thông minh đến với Tây Nguyên, minh bạch hóa nông nghiệp và kết nối cánh đồng đất đỏ với thị trường thế giới.',
+    title: t('about.sectionFour.slides.technology.title'),
+    content: t('about.sectionFour.slides.technology.content'),
   },
 ])
-const collapse = ref([
-  {
-    title: 'Nông dân Tây Nguyên',
-    content:
-      'Dành cả cuộc đời gắn bó với miền đất đỏ bazan, họ là linh hồn của vùng đất Tây Nguyên. Với kinh nghiệm dày dặn và tình yêu bản năng dành cho thiên nhiên, người nông dân tự tay chăm sóc từng cây cà phê, từng trái sầu riêng, mang đến vụ mùa trù phú.',
-  },
-  {
-    title: 'Chuyên gia nông nghiệp',
-    content:
-      'Với nhiều năm kinh nghiệm trong nghề và các chứng chỉ, giải thưởng danh giá trong lĩnh vực nông nghiệp, đội ngũ chuyên gia của Farmblock kết hợp kiến thức thực tế với công nghệ hiện đại, đảm bảo mỗi luống đất đều được chăm sóc một cách tối ưu,',
-  },
-  {
-    title: 'Đội ngũ công nghệ',
-    content:
-      'Với nền tảng vững chắc về tự động hóa, blockchain và dữ liệu, đội ngũ kỹ sư trẻ của chúng tôi mang hệ thống công nghệ thông minh đến với Tây Nguyên, minh bạch hóa nông nghiệp và kết nối cánh đồng đất đỏ với thị trường thế giới.',
-  },
-])
+const collapse = computed(() => slides.value.map(({ title, content }) => ({ title, content })))
 
 const activeNames = ref(0)
 const handleChange = (val: CollapseModelValue) => {
@@ -116,7 +96,6 @@ onMounted(() => {
 })
 const activeIndex = ref(0)
 const swiperInstance = ref()
-const swiperInstanceText = ref()
 
 const onSlideChange = (swiper: any) => {
   activeIndex.value = swiper.realIndex

@@ -2,7 +2,7 @@
   <div class="section-three flex min-h-screen w-screen flex-col bg-brand-primary md:min-h-[73.75rem]">
     <div class="max-w-content flex h-full w-full flex-1 flex-col items-center gap-4 py-6 md:gap-[4rem] md:py-[7.5rem]">
       <h3 id="three_block_1" class="w-full text-center text-body-28-bold text-default-primary md:text-heading-64-bold">
-        Giá trị trường tồn từ đất đai và con người
+        {{ $t('home.sectionThree.title') }}
       </h3>
       <div id="three_block_2" class="grid h-full w-full flex-1 grid-cols-2 gap-4 md:grid-cols-3 md:gap-6">
         <div
@@ -23,7 +23,7 @@
       </div>
       <!-- <common-button
         id="three_btn"
-        :text="'Khám phá giá trị của chúng tôi'"
+        :text="$t('btn.explore')"
         :extra-class="['']"
         @click="handleRedirect('/', false, true)"
       >
@@ -44,18 +44,18 @@ import { iconThree } from '@/assets/icons/three/index.ts'
 import imageCard03 from '@/assets/images/image-section-three-03.webp'
 import imageCard04 from '@/assets/images/image-section-three-04.webp'
 
-const { handleRedirect } = useRedirect()
-const listCard = [
+const { t } = useI18n()
+const listCard = computed(() => [
   {
-    title: 'Thiên nhiên trù phú',
+    title: t('home.sectionThree.cards.nature.title'),
     icon: iconThree.icon1,
-    desc: 'Những cánh đồng ở Gia Lai là nơi đất đỏ bazan nuôi dưỡng mùi vị cà phê đậm đà và hương thơm sầu riêng ngọt ngào. Chúng tôi kết hợp trồng trọt với công tác cải tạo, bảo vệ thiên nhiên, để đất đai mãi màu mỡ.',
+    desc: t('home.sectionThree.cards.nature.desc'),
     image: null,
   },
   {
-    title: 'Công nghệ tiên phong',
+    title: t('home.sectionThree.cards.technology.title'),
     icon: iconThree.icon2,
-    desc: 'Chúng tôi áp dụng các công nghệ hiện đại như drone theo dõi, hệ thống cảm biến thông minh và công nghệ blockchain minh bạch, tạo tiền đề cho một nền nông nghiệp tương lai từ tinh túy đất Việt.',
+    desc: t('home.sectionThree.cards.technology.desc'),
     image: null,
   },
   {
@@ -71,18 +71,18 @@ const listCard = [
     image: imageCard04,
   },
   {
-    title: 'Cộng đồng bền vững',
+    title: t('home.sectionThree.cards.community.title'),
     icon: iconThree.icon5,
-    desc: 'Chúng tôi hỗ trợ nông dân Tây Nguyên trong hoạt động canh tác, đào tạo nâng cao chuyên môn và trao cơ hội việc làm. Mỗi cây trồng là một nụ cười, mỗi vụ mùa là một câu chuyện.',
+    desc: t('home.sectionThree.cards.community.desc'),
     image: null,
   },
   {
-    title: 'Tầm nhìn toàn cầu',
+    title: t('home.sectionThree.cards.global.title'),
     icon: iconThree.icon6,
-    desc: 'Cùng các đối tác và các chuyên gia nông nghiệp đến từ  Israel và châu Âu, chúng tôi đưa nông sản Việt Nam đến bữa ăn của các gia đình toàn cầu, nâng tầm giá trị nông nghiệp.',
+    desc: t('home.sectionThree.cards.global.desc'),
     image: null,
   },
-]
+])
 
 gsap.registerPlugin(ScrollTrigger)
 onMounted(async () => {

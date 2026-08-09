@@ -68,7 +68,7 @@
     </div>
     <div class="bg-[#B4E27E]">
       <p class="max-w-content w-full py-4 text-center text-body-16-med text-default-primary">
-        Bản quyền © 2025 Thuộc về Farmblock
+        {{ $t('footer.copyright') }}
       </p>
     </div>
   </footer>
@@ -135,9 +135,6 @@ const contact = computed(() => [
     value: 'contact@farmblock.ai',
   },
 ])
-const scrollToTop = () => {
-  window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })
-}
 onMounted(() => {
   const el = document.querySelector('.footer') as HTMLElement
   const observer = new IntersectionObserver(

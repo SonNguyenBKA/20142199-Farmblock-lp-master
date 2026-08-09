@@ -14,9 +14,9 @@
     <div class="model-section-1--layer2"></div>
     <div class="model-section-1--layer3">
       <div class="block-content max-w-content" data-aos="fade-in" data-aos-delay="100">
-        <p class="text-[1rem] font-bold text-[#008242] sm:text-[2rem]">Mô hình vận hành</p>
+        <p class="text-[1rem] font-bold text-[#008242] sm:text-[2rem]">{{ $t('model.sectionOne.eyebrow') }}</p>
         <p class="text-[2rem] font-bold leading-[135%] text-[#06280C] sm:text-[4.5rem]">
-          Hệ thống trang trại FarmBlock
+          {{ $t('model.sectionOne.title') }}
         </p>
       </div>
     </div>
@@ -24,10 +24,6 @@
 </template>
 
 <script setup lang="ts">
-import bgAboutMe from '@/assets/videos/bg-about-me.mp4'
-import bgAboutMeMb from '@/assets/videos/bg-about-me-mb.mp4'
-
-const isMobile = useMobile()
 </script>
 
 <style lang="scss">

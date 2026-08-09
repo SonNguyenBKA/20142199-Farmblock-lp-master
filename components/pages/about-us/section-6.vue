@@ -3,10 +3,10 @@
     <div class="about-us-section-6--content max-w-content">
       <div class="about-us-section-6__header">
         <p class="text-[#06280C] text-[1.75rem] sm:text-[4rem] font-bold leading-[140%] text-center mb-4 sm:mb-[4rem]">
-          Blogs
+          {{ $t('about.sectionSix.title') }}
         </p>
         <NuxtLink to="/blog" class="about-us-section-6__view-all">
-          Xem tất cả
+          {{ $t('btn.view_all') }}
         </NuxtLink>
       </div>
 
@@ -83,11 +83,12 @@ import slide3 from '@/assets/images/pages/about-me/slide-section-6-3.webp'
 const modules = [Navigation, Autoplay, Pagination, Scrollbar, A11y, EffectFade]
 const isMobile = useMobile()
 const router = useRouter()
+const { locale, t } = useI18n()
 const { fetchBlogs } = useBlogApi()
 
 const fallbackImages = [slide1, slide2, slide3]
 
-const { data, pending, error } = await useAsyncData('about-us-blogs', () => fetchBlogs(1, '', 6))
+const { data, pending, error } = await useAsyncData('about-us-blogs', () => fetchBlogs(1, '', 6), { watch: [locale] })
 
 interface BlogSlide {
   slug: string
@@ -103,7 +104,7 @@ const slides = computed<BlogSlide[]>(() => {
     slug: post.slug,
     img: post.featured_image_url || fallbackImages[index % fallbackImages.length],
     title: post.title,
-    linkDes: 'Xem thêm',
+    linkDes: t('btn.read_more'),
   }))
 })
 

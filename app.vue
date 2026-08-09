@@ -10,18 +10,17 @@
 </template>
 
 <script setup lang="ts">
-import { nextTick, onMounted } from 'vue'
+import { onMounted } from 'vue'
+
+const { locale, setLocale } = useI18n()
+const languageCookie = useCookie<'vi' | 'en'>('i18n_lang', { default: () => 'vi' })
 
 onMounted(async () => {
-  const { locale, setLocale, t } = useI18n()
-  await nextTick()
-  const cookie = useCookie('i18n_lang')
-  if (cookie.value && cookie.value !== locale.value) {
-    setLocale(cookie.value)
-  } else {
-    setLocale('vi')
-    useCookie('i18n_lang').value = 'vi'
+  const nextLocale = languageCookie.value === 'en' ? 'en' : 'vi'
+  if (locale.value !== nextLocale) {
+    await setLocale(nextLocale)
   }
+  languageCookie.value = nextLocale
 })
 </script>
 

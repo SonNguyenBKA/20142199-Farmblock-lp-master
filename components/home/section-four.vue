@@ -1,6 +1,6 @@
 <template>
   <div class="section-four h-fit w-screen">
-    <div class="grid h-full w-full grid-cols-2 grid-rows-3 md:grid-rows-2">
+    <div class="grid h-full w-full grid-cols-2 grid-rows-1">
       <div
         v-for="(card, index) in listCard"
         :key="index"
@@ -26,36 +26,21 @@ import { gsap } from 'gsap'
 import ScrollTrigger from 'gsap/ScrollTrigger'
 
 gsap.registerPlugin(ScrollTrigger)
-const isMobile = useMobile()
-const listCard = [
+const { t } = useI18n()
+const listCard = computed(() => [
+  {
+    title: '15',
+    sub_title: '+',
+    desc: t('home.sectionFour.strategic_partners'),
+  },
   {
     title: '10',
     sub_title: '+',
-    desc: 'Đối tác Chiến lược',
+    desc: t('home.sectionFour.active_projects'),
   },
-  {
-    title: '10',
-    sub_title: '+',
-    desc: 'Dự án Đang Triển khai',
-  },
-  {
-    title: '30',
-    sub_title: '%',
-    desc: 'Lợi nhuận Trung bình Hàng năm',
-  },
-  {
-    title: '5',
-    sub_title: ' triệu USD',
-    desc: 'Tổng Giá trị Tài sản đang quản lý',
-  },
-]
+])
 const styleCardWrap = (index: number) => {
-  const bgColor = isMobile.value ? (index === 3 ? 'bg-two' : 'bg-one') : index <= 1 ? 'bg-one' : 'bg-two'
-  return [
-    bgColor,
-    index % 2 === 0 ? 'justify-end ' : 'justify-start md:pl-[4rem]',
-    { 'col-span-2': index === 2 || index === 3 },
-  ]
+  return ['bg-one', index === 0 ? 'justify-end' : 'justify-start md:pl-[4rem]']
 }
 
 onMounted(async () => {

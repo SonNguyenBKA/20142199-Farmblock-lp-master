@@ -4,7 +4,7 @@
       <p
         class="mb-[1.5rem] text-[1.75rem] font-bold leading-[140%] text-[#06280C] sm:mb-[4rem] sm:text-[4rem] mobile:text-center"
       >
-        Hành trình vươn xa
+        {{ $t('about.sectionFive.title') }}
       </p>
       <div
         :class="!isMobile ? 'row-item' : 'col-item'"
@@ -64,27 +64,25 @@ import icon2 from '@/assets/icons/pages/about-me/icon-section-5-2.svg'
 import icon3 from '@/assets/icons/pages/about-me/icon-section-5-3.svg'
 
 const isMobile = useMobile()
-const dataRows = ref([
+const { t } = useI18n()
+const dataRows = computed(() => [
   {
     icon: icon1,
-    title: 'Mốc 1: 2025',
-    sub: '30ha khởi đầu',
-    content:
-      'Trên 30ha đất đỏ Gia Lai, chúng tôi gieo những hạt giống đầu tiên, kết hợp truyền thống Tây Nguyên với công nghệ tự động hóa hiện đại.',
+    title: t('about.sectionFive.timeline.first.title'),
+    sub: t('about.sectionFive.timeline.first.sub'),
+    content: t('about.sectionFive.timeline.first.content'),
   },
   {
     icon: icon2,
-    title: 'Mốc 2: 2028',
-    sub: '200ha thông minh',
-    content:
-      'Mở rộng lên 200ha, chúng tôi xây dựng những trang trại thông minh, nơi drone, hệ thống cảm biến, và công nghệ blockchain minh bạch hóa nông nghiệp.',
+    title: t('about.sectionFive.timeline.second.title'),
+    sub: t('about.sectionFive.timeline.second.sub'),
+    content: t('about.sectionFive.timeline.second.content'),
   },
   {
     icon: icon3,
-    title: 'Mốc 3: Tương lai',
-    sub: 'Nông sản toàn cầu',
-    content:
-      'Mang cà phê và sầu riêng chất lượng cao của Việt Nam đến bữa ăn mọi gia đình trên thế giới, chúng tôi viết tiếp câu chuyện về miền đất đỏ và những con người nơi đây.',
+    title: t('about.sectionFive.timeline.future.title'),
+    sub: t('about.sectionFive.timeline.future.sub'),
+    content: t('about.sectionFive.timeline.future.content'),
   },
 ])
 </script>

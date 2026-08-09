@@ -11,14 +11,13 @@
         </div>
         <div class="flex flex-col">
           <h3 class="pb-4 text-heading-32-bold text-brand-primary md:pb-6 md:text-heading-48-bold">
-            Hãy cùng chúng tôi viết tiếp câu chuyện về Tây Nguyên
+            {{ $t('home.sectionTen.title') }}
           </h3>
           <p class="pb-2 text-label-14-reg text-inverse-primary md:pb-4 md:text-body-18-reg">
-            Dự án nông nghiệp công nghệ cao FarmBlock là nơi thiên nhiên, con người và công nghệ cùng tạo nên những giá
-            trị bền vững.
+            {{ $t('home.sectionTen.paragraph_1') }}
           </p>
           <p class="text-label-14-reg text-inverse-primary md:text-body-18-reg">
-            Hãy liên hệ với chúng tôi để cùng khám phá những cách để bạn có thể trở thành một phần của hành trình này.
+            {{ $t('home.sectionTen.paragraph_2') }}
           </p>
         </div>
         <div class="flex w-full flex-col gap-6">
@@ -31,27 +30,27 @@
           >
             <div class="grid grid-cols-1 items-stretch gap-2 md:grid-cols-2">
               <el-form-item prop="gender">
-                <el-select v-model="form.gender" placeholder="Giới tính *">
-                  <el-option label="Anh" value="male" />
-                  <el-option label="Chị" value="female" />
-                  <el-option label="Khác" value="other" />
+                <el-select v-model="form.gender" :placeholder="$t('forms.gender')">
+                  <el-option :label="$t('forms.male')" value="male" />
+                  <el-option :label="$t('forms.female')" value="female" />
+                  <el-option :label="$t('forms.other')" value="other" />
                 </el-select>
               </el-form-item>
               <el-form-item prop="username">
-                <el-input v-model="form.username" placeholder="Họ và tên *" />
+                <el-input v-model="form.username" :placeholder="$t('forms.name')" />
               </el-form-item>
               <el-form-item prop="phone_number">
-                <el-input v-model="form.phone_number" placeholder="Số điện thoại *" />
+                <el-input v-model="form.phone_number" :placeholder="$t('forms.phone')" />
               </el-form-item>
               <el-form-item prop="email">
-                <el-input v-model="form.email" placeholder="E-Mail *" />
+                <el-input v-model="form.email" :placeholder="$t('forms.email')" />
               </el-form-item>
             </div>
             <el-form-item prop="message">
-              <el-input v-model="form.message" placeholder="Tin nhắn" type="textarea" :rows="5" />
+              <el-input v-model="form.message" :placeholder="$t('forms.message')" type="textarea" :rows="5" />
             </el-form-item>
           </el-form>
-          <common-button :text="'Gửi thông tin'" :extra-class="['']" @click="submitForm()">
+          <common-button :text="$t('btn.submit')" :extra-class="['']" @click="submitForm()">
             <template #append>
               <span class="size-[1.5rem]">
                 <img src="@/assets/icons/arrow-right-default.svg" alt="" class="h-auto w-full object-cover" />
@@ -92,7 +91,7 @@ const rules = reactive<FormRules>({
 })
 const submitForm = () => {
   formRef.value?.resetFields()
-  messageInfo('Coming soon')
+  messageInfo(trans('common.coming_soon'))
   // formRef.value?.validate((valid: any) => {
   //   if (valid) {
   //     console.log(form)

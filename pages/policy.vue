@@ -4,10 +4,10 @@
       <header class="policy-page__header">
         <h1 class="policy-page__title">{{ privacyPolicyMeta.title }}</h1>
         <p class="policy-page__meta">
-          <span>Effective Date: {{ privacyPolicyMeta.effectiveDate }}</span>
+          <span>{{ $t('policy.effective_date') }}: {{ privacyPolicyMeta.effectiveDate }}</span>
         </p>
         <p class="policy-page__meta">
-          <span>Last Updated: {{ privacyPolicyMeta.lastUpdated }}</span>
+          <span>{{ $t('policy.last_updated') }}: {{ privacyPolicyMeta.lastUpdated }}</span>
         </p>
       </header>
 
@@ -85,18 +85,26 @@
 </template>
 
 <script setup lang="ts">
-import { privacyPolicyMeta, privacyPolicySections } from '@/constants/privacy-policy'
+import {
+  privacyPolicyMeta as privacyPolicyMetaEn,
+  privacyPolicySections as privacyPolicySectionsEn,
+  privacyPolicyViMeta,
+  privacyPolicyViSections,
+} from '@/constants/privacy-policy'
 
-useHead({
-  title: 'Privacy Policy | FarmBlock',
+const { locale, t } = useI18n()
+const privacyPolicyMeta = computed(() => (locale.value === 'vi' ? privacyPolicyViMeta : privacyPolicyMetaEn))
+const privacyPolicySections = computed(() => (locale.value === 'vi' ? privacyPolicyViSections : privacyPolicySectionsEn))
+
+useHead(() => ({
+  title: t('policy.title') + ' | FarmBlock',
   meta: [
     {
       name: 'description',
-      content:
-        'FarmBlock Privacy Policy — how we collect, use, store, share, and protect personal information.',
+      content: t('policy.description'),
     },
   ],
-})
+}))
 </script>
 
 <style lang="scss" scoped>

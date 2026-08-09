@@ -15,17 +15,14 @@
       <div class="flex flex-1 flex-col justify-between gap-6 md:gap-[4rem]">
         <div data-aos="fade-right" data-aos-delay="0" class="flex flex-col gap-2 md:gap-4">
           <h4 class="text-center text-body-16-bold text-neutral-primary md:text-start md:text-heading-32-bold">
-            Tại sao nên đồng hành cùng Farmblock?
+            {{ $t('home.sectionSeven.eyebrow') }}
           </h4>
           <h3 class="text-center text-body-28-bold text-default-primary md:text-start md:text-heading-64-bold">
-            Niềm tin bắt đầu từ <br />
-            Hệ sinh thái minh bạch
+            {{ $t('home.sectionSeven.title_line_1') }} <br />
+            {{ $t('home.sectionSeven.title_line_2') }}
           </h3>
           <p class="text-center text-label-14-reg text-default-primary md:text-start md:text-body-18-reg">
-            Farmblock không chỉ kết nối các mắt xích trong chuỗi giá trị nông nghiệp mà còn tái cấu trúc toàn bộ hệ
-            thống bằng công nghệ, dữ liệu và logic vận hành thực tế. Từ sản xuất đến phân phối, mọi yếu tố đều được số
-            hóa, chuẩn hóa và đồng bộ theo thời gian thực, tạo nên một hệ sinh thái thống nhất, minh bạch, với các cấu
-            phần có khả năng mở rộng, nhân bản dễ dàng.
+            {{ $t('home.sectionSeven.desc') }}
           </p>
         </div>
         <div data-aos="fade-up" data-aos-delay="500" class="grid w-full grid-cols-1 gap-2 md:grid-cols-2 md:gap-6">
@@ -34,7 +31,7 @@
           >
             <img :src="iconSeven.icon1" alt="" class="size-[4rem] md:size-[5.25rem]" />
             <p class="flex-1 text-body-16-bold text-neutral-secondary md:text-body-24-bold">
-              6 Khối Chức năng được tích hợp & vận hành đồng bộ
+              {{ $t('home.sectionSeven.integrated_blocks') }}
             </p>
           </div>
           <div
@@ -42,7 +39,7 @@
           >
             <img :src="iconSeven.icon2" alt="" class="size-[4rem] md:size-[5.25rem]" />
             <p class="flex-1 text-body-16-bold text-neutral-secondary md:text-body-24-bold">
-              100% Dữ liệu được lưu trữ minh bạch với công nghệ Blockchain
+              {{ $t('home.sectionSeven.transparent_data') }}
             </p>
           </div>
         </div>

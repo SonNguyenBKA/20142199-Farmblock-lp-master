@@ -6,14 +6,13 @@
     <div class="about-us-section-1--layer2" />
     <div class="about-us-section-1--layer3">
       <div class="block-content max-w-content" data-aos="fade-in" data-aos-delay="100">
-        <p class="text-body-16-bold font-bold text-brand-primary md:text-heading-32-bold">Liên hệ</p>
+        <p class="text-body-16-bold font-bold text-brand-primary md:text-heading-32-bold">{{ $t('contact.hero.eyebrow') }}</p>
         <p class="text-heading-36-bold text-brand-secondary md:text-heading-72-bold">
-          Kết nối với Tây Nguyên, <br />
-          nơi đất đỏ kể chuyện
+          {{ $t('contact.hero.title_line_1') }} <br />
+          {{ $t('contact.hero.title_line_2') }}
         </p>
         <p class="text-center text-label-14-reg font-normal text-brand-secondary md:text-body-24-reg">
-          Chúng tôi ở đây để lắng nghe câu chuyện của bạn, chia sẻ tầm nhìn về một nền nông nghiệp <br />
-          bền vững, và cùng bạn chạm đến giá trị trường tồn từ miền đất đỏ bazan trù phú.
+          {{ $t('contact.hero.desc') }}
         </p>
       </div>
     </div>

@@ -3,18 +3,13 @@
     <div class="section-wrapper sticky-slot">
       <div class="section-wrapper__title max-w-content flex flex-col gap-4">
         <h2 class="flex flex-col">
-          <span class="text-[1.625rem] font-bold text-default-primary sm:text-heading-64-bold"> Từ thực địa đến </span>
+          <span class="text-[1.625rem] font-bold text-default-primary sm:text-heading-64-bold">{{ $t('model.sectionTwo.title_line_1') }}</span>
           <span class="text-[1.625rem] font-bold text-[#008242] sm:text-heading-64-bold">
-            một hệ sinh thái toàn diện
+            {{ $t('model.sectionTwo.title_line_2') }}
           </span>
         </h2>
         <p class="w-full max-w-[50.75rem] text-body-18-reg text-black">
-          <span class="text-body-18-bold text-[#008242]">Farmblock</span>
-          xây dựng các vùng trồng thực tế, được sở hữu trực tiếp bởi các đơn vị sản xuất tại địa phương – nơi công nghệ,
-          tiêu chuẩn và cơ chế quản trị hiện đại được áp dụng nhằm nâng cao hiệu suất, minh bạch hóa quy trình và kết
-          nối đồng bộ với toàn hệ thống. Mô hình này đã được triển khai tại Tây Nguyên và đang tiếp tục mở rộng trên
-          nhiều vùng sinh thái khác, trở thành lớp hạ tầng thực địa của hệ sinh thái
-          <span class="text-body-18-bold text-[#008242]">Farmblock</span>.
+          {{ $t('model.sectionTwo.paragraph') }}
         </p>
       </div>
       <div class="section-wrapper__card">
@@ -29,7 +24,7 @@
 </template>
 
 <script setup lang="ts">
-import { onMounted, ref } from 'vue'
+import { onMounted } from 'vue'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import card1 from '@/assets/images/pages/model/img-section-2-1.webp'

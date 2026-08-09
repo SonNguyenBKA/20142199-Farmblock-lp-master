@@ -3,10 +3,10 @@
     <div class="max-w-content flex h-full w-full flex-1 flex-col gap-4 py-6 md:gap-[4rem] md:py-[7.5rem]">
       <div class="flex w-full flex-col items-center justify-center gap-1">
         <p class="text-center text-body-16-bold text-neutral-primary md:text-heading-32-bold">
-          Hệ sinh thái của Farmblock
+          {{ $t('home.sectionSix.eyebrow') }}
         </p>
         <h3 class="text-center text-body-28-bold text-default-primary md:text-heading-64-bold">
-          Cùng đồng hành kiến tạo, cùng chia sẻ giá trị
+          {{ $t('home.sectionSix.title') }}
         </h3>
       </div>
       <div class="grid h-full w-full flex-1 grid-cols-1 gap-4 md:grid-cols-2 md:gap-[2.625rem]">
@@ -47,29 +47,30 @@
 import imageSection from '@/assets/images/image-section-six.webp'
 
 const isMobile = useMobile()
+const { t } = useI18n()
 const nameActive = ref(0)
-const listCard = [
+const listCard = computed(() => [
   {
-    title: 'Nhà đầu tư',
-    desc: 'Tiếp cận thị trường nông nghiệp thông qua các danh mục đầu tư đa dạng, với cơ chế pháp lý rõ ràng, dòng tiền ổn định và hệ thống theo dõi minh bạch.',
+    title: t('home.sectionSix.cards.investors.title'),
+    desc: t('home.sectionSix.cards.investors.desc'),
   },
   {
-    title: 'Farmblock & các đơn vị sản xuất nông nghiệp',
-    desc: 'Quản lý và vận hành dự án, áp dụng công nghệ blockchain để truy xuất nguồn gốc, sử dụng hệ thống AI để tối ưu năng suất và mở rộng quy mô vùng trồng.',
+    title: t('home.sectionSix.cards.producers.title'),
+    desc: t('home.sectionSix.cards.producers.desc'),
   },
   {
-    title: 'Comblock & Các đối tác tổ chức thương mại',
-    desc: 'Tối ưu hoạt động logistics và thúc đẩy thương mại để phân phối nông sản tại hệ thống siêu thị châu Âu và châu Á.',
+    title: t('home.sectionSix.cards.trade.title'),
+    desc: t('home.sectionSix.cards.trade.desc'),
   },
   {
-    title: 'Tổ chức nghiên cứu & giáo dục',
-    desc: 'Thử nghiệm sản phẩm, dịch vụ hoặc ý tưởng mới ngay trên vùng trồng thật – từ công nghệ nông nghiệp đến du lịch trải nghiệm, truyền thông, giáo dục.',
+    title: t('home.sectionSix.cards.research.title'),
+    desc: t('home.sectionSix.cards.research.desc'),
   },
   {
-    title: 'Các đối tác phát triển nông nghiệp trong nước',
-    desc: 'Trao đổi, tiếp nhận chuyển giao công nghệ cao cùng đội ngũ  Israel Agrotech và các chuyên gia đến từ châu Âu.',
+    title: t('home.sectionSix.cards.partners.title'),
+    desc: t('home.sectionSix.cards.partners.desc'),
   },
-]
+])
 
 onMounted(() => {
   const iconWrapper = document.querySelectorAll('.cs-collapse .el-icon.el-collapse-item__arrow')

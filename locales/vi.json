@@ -3,13 +3,20 @@
     "explore": "Khám phá mô hình",
     "launch_app": "Truy cập vườn mẫu",
     "menu": "Menu",
-    "close": "Đóng"
+    "close": "Đóng",
+    "discover_journey": "Khám phá hành trình",
+    "contact": "Liên hệ",
+    "submit": "Gửi thông tin",
+    "view_all": "Xem tất cả",
+    "read_more": "Xem thêm",
+    "previous": "Trước",
+    "next": "Sau"
   },
   "menu": {
     "home": "Trang chủ",
     "about_us": "Về chúng tôi",
     "model": "Mô hình",
-    "technology": "Công nghệ",
+    "technology": "Sổ Tay Nhà Nông",
     "contact": "Liên hệ",
     "download_app": "Tải ứng dụng"
   },
@@ -21,18 +28,299 @@
     "home": "Trang chủ",
     "about_me": "Về Chúng tôi",
     "operating_model": "Mô hình vận hành",
-    "blog": "Blog",
+    "blog": "Sổ Tay Nhà Nông",
     "privacy_policy": "Chính sách bảo mật",
     "terms_of_service": "Điều khoản sử dụng dịch vụ",
     "faq": "Câu hỏi thường gặp",
     "address": "Địa chỉ",
     "phone_number": "Số điện thoại",
-    "email": "E-Mail"
+    "email": "E-Mail",
+    "copyright": "Bản quyền © 2025 Thuộc về Farmblock"
+  },
+  "common": {
+    "coming_soon": "Sắp ra mắt",
+    "effective_date": "Ngày có hiệu lực",
+    "last_updated": "Cập nhật lần cuối",
+    "by": "Bởi"
+  },
+  "forms": {
+    "gender": "Giới tính *",
+    "male": "Anh",
+    "female": "Chị",
+    "other": "Khác",
+    "name": "Họ và tên *",
+    "phone": "Số điện thoại *",
+    "email": "E-Mail *",
+    "message": "Tin nhắn",
+    "contact_info": "Thông tin liên hệ",
+    "address": "Địa chỉ:",
+    "phone_label": "Số điện thoại:",
+    "email_label": "E-Mail:"
   },
   "hero": {
     "label": "Tiên phong trong số hoá tài sản Nông nghiệp",
-    "title": "Hành trình cùng Tây Nguyên Chạm đến tương lai",
-    "desc": "Từ những cánh đồng cà phê Tây Nguyên, chúng tôi kết nối thiên nhiên với nền tảng công nghệ tiên phong và hệ thống blockchain — mang nông sản Việt đến thế giới, cùng người nông dân viết nên câu chuyện bền vững.",
+    "title": "Hành trình cùng Tây Nguyên chạm đến tương lai",
+    "desc": "Từ những cánh đồng cà phê Tây Nguyên, chúng tôi kết nối thiên nhiên với nền tảng công nghệ tiên phong, mang nông sản Việt đến thế giới, cùng người nông dân viết nên câu chuyện bền vững."
   },
-  "coming_soon": "Coming soon"
+  "home": {
+    "hero": {
+      "label": "Tiên phong trong số hoá tài sản Nông nghiệp",
+      "title": "Hành trình cùng Tây Nguyên chạm đến tương lai",
+      "desc": "Từ những cánh đồng cà phê Tây Nguyên, chúng tôi kết nối thiên nhiên với nền tảng công nghệ tiên phong, mang nông sản Việt đến thế giới, cùng người nông dân viết nên câu chuyện bền vững."
+    },
+    "sectionTwo": {
+      "title_line_1": "Hành trình ra thế giới,",
+      "title_line_2": "định hình nông sản Việt Nam",
+      "paragraph_1": "Trên nền đất đỏ Gia Lai, chúng tôi gieo những hạt giống đầu tiên, không chỉ là cà phê, sầu riêng, mà là giấc mơ về một nền nông nghiệp bền vững. Với công nghệ tiên phong từ Israel, chúng tôi chăm sóc từng cây trồng, minh bạch từng vụ mùa, và cùng nông dân Tây Nguyên viết nên câu chuyện vươn xa.",
+      "paragraph_2": "Hôm nay là Gia Lai, ngày mai là Tây Nguyên, và xa hơn là nông sản Việt trên bàn ăn toàn cầu."
+    },
+    "sectionThree": {
+      "title": "Giá trị trường tồn từ đất đai và con người",
+      "cards": {
+        "nature": {
+          "title": "Thiên nhiên trù phú",
+          "desc": "Những cánh đồng ở Gia Lai là nơi đất đỏ bazan nuôi dưỡng mùi vị cà phê đậm đà và hương thơm sầu riêng ngọt ngào. Chúng tôi kết hợp trồng trọt với công tác cải tạo, bảo vệ thiên nhiên, để đất đai mãi màu mỡ."
+        },
+        "technology": {
+          "title": "Công nghệ tiên phong",
+          "desc": "Chúng tôi áp dụng các công nghệ hiện đại như drone theo dõi, hệ thống cảm biến thông minh và công nghệ blockchain minh bạch, tạo tiền đề cho một nền nông nghiệp tương lai từ tinh túy đất Việt."
+        },
+        "community": {
+          "title": "Cộng đồng bền vững",
+          "desc": "Chúng tôi hỗ trợ nông dân Tây Nguyên trong hoạt động canh tác, đào tạo nâng cao chuyên môn và trao cơ hội việc làm. Mỗi cây trồng là một nụ cười, mỗi vụ mùa là một câu chuyện."
+        },
+        "global": {
+          "title": "Tầm nhìn toàn cầu",
+          "desc": "Cùng các đối tác và các chuyên gia nông nghiệp đến từ Israel và châu Âu, chúng tôi đưa nông sản Việt Nam đến bữa ăn của các gia đình toàn cầu, nâng tầm giá trị nông nghiệp."
+        }
+      }
+    },
+    "sectionFour": {
+      "strategic_partners": "Đối tác Chiến lược",
+      "active_projects": "Dự án Đang triển khai"
+    },
+    "sectionFive": {
+      "eyebrow": "Công nghệ của Farmblock",
+      "title": "Công nghệ định hình tương lai nông nghiệp",
+      "cards": {
+        "connect": {
+          "title": "Kết nối từ bất kì đâu",
+          "desc": "Ứng dụng di động kết nối cánh đồng đến với bạn bất kì khi nào, tại bất kì đâu — hiển thị tiến độ phát triển, thông số kĩ thuật – mọi thứ đều nằm trong tầm tay bạn."
+        },
+        "transparency": {
+          "title": "Minh bạch từ gốc",
+          "desc": "Mỗi hạt cà phê, mỗi trái sầu riêng kể câu chuyện của mình qua các mã QR. Công nghệ blockchain lưu giữ niềm tin, từ đất đỏ Tây Nguyên đến tận tay khách hàng."
+        },
+        "smart_care": {
+          "title": "Chăm sóc thông minh",
+          "desc": "Với hệ thống cảm biến, camera và dữ liệu vận hành theo thời gian thực, FarmBlock giúp theo dõi sức khỏe cây trồng liên tục, tối ưu tưới tiêu và canh tác chính xác hơn trong từng giai đoạn phát triển."
+        },
+        "sustainability": {
+          "title": "Bền vững từ thiên nhiên",
+          "desc": "Với hệ thống pin mặt trời và mạng lưới tưới tiêu tự động, tuân thủ các tiêu chí bảo vệ thiên nhiên chuẩn quốc tế, chúng tôi mãi gìn giữ thiên nhiên cho thế hệ mai sau."
+        }
+      }
+    },
+    "sectionSix": {
+      "eyebrow": "Hệ sinh thái của Farmblock",
+      "title": "Cùng đồng hành kiến tạo, cùng chia sẻ giá trị",
+      "cards": {
+        "investors": {
+          "title": "Nhà đầu tư",
+          "desc": "Tiếp cận thị trường nông nghiệp thông qua các danh mục đầu tư đa dạng, với cơ chế pháp lý rõ ràng, dòng tiền ổn định và hệ thống theo dõi minh bạch."
+        },
+        "producers": {
+          "title": "Farmblock & các đơn vị sản xuất nông nghiệp",
+          "desc": "Phối hợp triển khai vận hành farm, ứng dụng công nghệ giám sát và chuẩn hóa dữ liệu canh tác nhằm tối ưu hiệu quả vận hành theo quy mô lớn."
+        },
+        "trade": {
+          "title": "Đối tác thương mại & phân phối",
+          "desc": "Kết nối đầu ra cho nông sản đạt tiêu chuẩn, đồng thời hỗ trợ xây dựng chuỗi cung ứng và truy xuất nguồn gốc minh bạch hơn."
+        },
+        "research": {
+          "title": "Tổ chức nghiên cứu & giáo dục",
+          "desc": "Thử nghiệm sản phẩm, dịch vụ hoặc ý tưởng mới ngay trên vùng trồng thật – từ công nghệ nông nghiệp đến du lịch trải nghiệm, truyền thông, giáo dục."
+        },
+        "partners": {
+          "title": "Các đối tác phát triển nông nghiệp trong nước",
+          "desc": "Trao đổi, tiếp nhận chuyển giao công nghệ cao cùng đội ngũ Israel Agrotech và các chuyên gia đến từ châu Âu."
+        }
+      }
+    },
+    "sectionSeven": {
+      "eyebrow": "Tại sao nên đồng hành cùng Farmblock?",
+      "title_line_1": "Niềm tin bắt đầu từ",
+      "title_line_2": "Hệ sinh thái minh bạch",
+      "desc": "Farmblock không chỉ kết nối các mắt xích trong chuỗi giá trị nông nghiệp mà còn tái cấu trúc toàn bộ hệ thống bằng công nghệ, dữ liệu và logic vận hành thực tế. Từ sản xuất đến phân phối, mọi yếu tố đều được số hóa, chuẩn hóa và đồng bộ theo thời gian thực, tạo nên một hệ sinh thái thống nhất, minh bạch, với các cấu phần có khả năng mở rộng, nhân bản dễ dàng.",
+      "integrated_blocks": "6 Khối Chức năng được tích hợp & vận hành đồng bộ",
+      "transparent_data": "100% Dữ liệu được lưu trữ minh bạch tại nền tảng FarmBlock"
+    },
+    "sectionEleven": {
+      "title": "Hãy Tải Ứng Dụng FarmBlock Ngay Hôm Nay!",
+      "desc": "Quản lý hoạt động nông trại của bạn mọi lúc, mọi nơi. Theo dõi hoạt động, giám sát tiến độ và giữ liên lạc với đội ngũ FarmBlock chỉ bằng một ứng dụng di động đơn giản và tiện lợi.",
+      "app_store_aria": "Tải trên App Store",
+      "google_play_aria": "Tải trên Google Play",
+      "image_alt": "Giao diện ứng dụng FarmBlock trên điện thoại"
+    },
+    "sectionTen": {
+      "title": "Hãy cùng chúng tôi viết tiếp câu chuyện về Tây Nguyên",
+      "paragraph_1": "Dự án nông nghiệp công nghệ cao FarmBlock là nơi thiên nhiên, con người và công nghệ cùng tạo nên những giá trị bền vững.",
+      "paragraph_2": "Hãy liên hệ với chúng tôi để cùng khám phá những cách để bạn có thể trở thành một phần của hành trình này."
+    }
+  },
+  "about": {
+    "sectionOne": {
+      "eyebrow": "Về chúng tôi",
+      "title": "Hành trình từ miền đất đỏ đến tương lai",
+      "desc": "Trên mảnh đất bazan trù phú, chúng tôi gieo những hạt giống của sự bền vững, kết nối thiên nhiên với công nghệ, cùng nông dân Tây Nguyên viết nên câu chuyện vươn ra thế giới."
+    },
+    "sectionTwo": {
+      "title": "Từ miền đất đỏ bazan trù phú",
+      "paragraph_1": "Tây Nguyên là vùng đất đỏ bazan nơi những hạt cà phê đậm đà và những trái sầu riêng ngọt ngào lớn lên với khí hậu nhiệt đới gió mùa cao nguyên. Hơn 30ha đất đai trù phú ở đây là nơi chúng tôi bắt đầu, không chỉ để trồng cây, mà để gieo trồng những hạt giống của một nền nông nghiệp bền vững.",
+      "paragraph_2": "Chúng tôi tin rằng nông nghiệp không chỉ là canh tác, mà là câu chuyện về con người, thiên nhiên, và tương lai.",
+      "paragraph_3": "Với tâm huyết của nông dân Tây Nguyên và công nghệ tiên phong từ Israel, chúng tôi chăm sóc từng luống đất, minh bạch từng vụ mùa, từ đó dẫn đường để mang nông sản Việt đến bàn ăn của các gia đình trên thế giới.",
+      "paragraph_4": "Chúng tôi mơ về những cánh đồng thông minh, nơi thiên nhiên và công nghệ hòa quyện, nơi mỗi người nông dân là một người anh hùng.",
+      "collaboration_eyebrow": "Hợp tác vì sự bền vững",
+      "collaboration_title": "Chúng tôi đồng hành cùng những người tiên phong"
+    },
+    "sectionThree": {
+      "title_line_1": "Sứ mệnh gìn giữ,",
+      "title_line_2": "tầm nhìn vươn xa",
+      "mission": "FarmBlock tồn tại để bảo vệ đất đai, tôn vinh nông dân, và minh bạch hóa nông nghiệp. Mỗi cây trồng là một cam kết với thiên nhiên, mỗi vụ mùa là một lời hứa với cộng đồng.",
+      "support": "Chúng tôi hỗ trợ nông dân Tây Nguyên, mang công nghệ đến từng luống đất, và đưa nông sản sạch đến mọi gia đình.",
+      "cards": {
+        "nature": "Bảo vệ thiên nhiên",
+        "farmers": "Tôn vinh nông dân",
+        "transparency": "Minh bạch hoá nông nghiệp"
+      }
+    },
+    "sectionFour": {
+      "eyebrow": "Con người - Linh hồn của dự án",
+      "title": "Những người gieo mầm tương lai",
+      "slides": {
+        "farmers": {
+          "title": "Nông dân Tây Nguyên",
+          "content": "Dành cả cuộc đời gắn bó với miền đất đỏ bazan, họ là linh hồn của vùng đất Tây Nguyên. Với kinh nghiệm dày dặn và tình yêu bản năng dành cho thiên nhiên, người nông dân tự tay chăm sóc từng cây cà phê, từng trái sầu riêng, mang đến vụ mùa trù phú."
+        },
+        "experts": {
+          "title": "Chuyên gia nông nghiệp",
+          "content": "Với nhiều năm kinh nghiệm trong nghề và các chứng chỉ, giải thưởng danh giá trong lĩnh vực nông nghiệp, đội ngũ chuyên gia của Farmblock kết hợp kiến thức thực tế với công nghệ hiện đại, đảm bảo mỗi luống đất đều được chăm sóc một cách tối ưu."
+        },
+        "technology": {
+          "title": "Đội ngũ công nghệ",
+          "content": "Với nền tảng vững chắc về tự động hóa, blockchain và dữ liệu, đội ngũ kỹ sư trẻ của chúng tôi mang hệ thống công nghệ thông minh đến với Tây Nguyên, minh bạch hóa nông nghiệp và kết nối cánh đồng đất đỏ với thị trường thế giới."
+        }
+      }
+    },
+    "sectionFive": {
+      "title": "Hành trình vươn xa",
+      "timeline": {
+        "first": {
+          "title": "Mốc 1: 2025",
+          "sub": "Các vườn mẫu khởi đầu",
+          "content": "Trên nền đất đỏ Gia Lai, chúng tôi gieo những hạt giống đầu tiên, kết hợp truyền thống Tây Nguyên với công nghệ tự động hóa hiện đại."
+        },
+        "second": {
+          "title": "Mốc 2: 2028",
+          "sub": "200ha thông minh",
+          "content": "Mở rộng lên 200ha, chúng tôi xây dựng những trang trại thông minh, nơi drone, hệ thống cảm biến, và công nghệ blockchain minh bạch hóa nông nghiệp."
+        },
+        "future": {
+          "title": "Mốc 3: Tương lai",
+          "sub": "Nông sản toàn cầu",
+          "content": "Mang cà phê và sầu riêng chất lượng cao của Việt Nam đến bữa ăn mọi gia đình trên thế giới, chúng tôi viết tiếp câu chuyện về miền đất đỏ và những con người nơi đây."
+        }
+      }
+    },
+    "sectionSix": {
+      "title": "Sổ Tay Nhà Nông"
+    }
+  },
+  "model": {
+    "sectionOne": {
+      "eyebrow": "Mô hình vận hành",
+      "title": "Hệ thống trang trại FarmBlock"
+    },
+    "sectionTwo": {
+      "title_line_1": "Từ thực địa đến",
+      "title_line_2": "một hệ sinh thái toàn diện",
+      "paragraph": "Farmblock xây dựng các vùng trồng thực tế, được sở hữu trực tiếp bởi các đơn vị sản xuất tại địa phương – nơi công nghệ, tiêu chuẩn và cơ chế quản trị hiện đại được áp dụng nhằm nâng cao hiệu suất, minh bạch hóa quy trình và kết nối đồng bộ với toàn hệ thống. Mô hình này đã được triển khai tại Tây Nguyên và đang tiếp tục mở rộng trên nhiều vùng sinh thái khác, trở thành lớp hạ tầng thực địa của hệ sinh thái Farmblock."
+    },
+    "sectionThree": {
+      "title": "Áp dụng các phương pháp canh tác hiện đại",
+      "blocks": {
+        "planning": {
+          "title": "Quy hoạch bài bản",
+          "content": "Các vùng trồng được thiết kế dưới sự cố vấn của các chuyên gia nông nghiệp trong nước và quốc tế, với định hướng dài hạn và có các phân khu chức năng rõ ràng."
+        },
+        "crops": {
+          "title": "Danh mục nông sản đa dạng",
+          "content": "Các giống cây được lựa chọn dựa trên đặc tính sinh thái và hiệu quả mùa vụ, kết hợp xen canh hợp lý giữa đặc sản, cây trồng lâu năm và cây trồng ngắn ngày."
+        },
+        "yield": {
+          "title": "Giống cây năng suất cao",
+          "content": "Sử dụng các giống cây trồng mới, đã được nghiên cứu và kiểm chứng thực nghiệm, nhằm tăng năng suất, giảm rủi ro và tối ưu điều kiện chăm sóc."
+        },
+        "quality": {
+          "title": "Tiêu chuẩn chất lượng uy tín",
+          "content": "Quy trình canh tác được hướng đến việc vận hành theo các tiêu chuẩn hiện đại như GlobalG.A.P, ISO 22000 và HACCP, đảm bảo chất lượng ổn định và phù hợp với nhu cầu của thị trường."
+        }
+      }
+    },
+    "sectionFour": {
+      "title": "Mô hình trại mẫu dễ dàng nhân rộng",
+      "paragraph_1": "Các vùng trồng trong hệ thống Farmblock được thiết kế như các mô hình trại mẫu – với quy trình sản xuất bài bản, hạ tầng công nghệ tích hợp và tiêu chuẩn chất lượng rõ ràng. Đây là nền tảng để Farmblock có thể nhân rộng, chuyển giao kỹ thuật và mở rộng hợp tác đầu tư, sản xuất hoặc nghiên cứu theo từng khu vực cụ thể.",
+      "paragraph_2": "Hãy kết nối cùng chúng tôi để hợp tác quy hoạch, vận hành và mở rộng mô hình trại mẫu tại địa phương của bạn!",
+      "cta": "Liên hệ hợp tác"
+    },
+    "sectionFive": {
+      "title": "Những hình ảnh thực tế từ các vùng trồng của Farmblock",
+      "description_before": "Những hình ảnh dưới đây được ghi nhận tại các vùng trồng trong hệ thống",
+      "description_after": "– nơi các mô hình sản xuất, giống cây và hạ tầng công nghệ đang từng bước được áp dụng, giám sát và phát triển."
+    },
+    "sectionSix": {
+      "title": "Thấy tận mắt tin tận tâm",
+      "paragraph_1": "Farmblock cho phép bạn theo dõi trực tiếp các hoạt động canh tác thực tế – từ tiến độ gieo trồng, tưới tiêu, đến dữ liệu môi trường và hình ảnh thực tế tại các vùng trồng. Tất cả được cập nhật liên tục từ hệ thống cảm biến và camera tại nông trại.",
+      "paragraph_2": "Không cần quảng cáo, giờ đây, hãy tự mình nhìn quy trình sản xuất đang diễn ra mỗi ngày!",
+      "cta": "Truy cập vườn mẫu"
+    }
+  },
+  "contact": {
+    "hero": {
+      "eyebrow": "Liên hệ",
+      "title_line_1": "Kết nối với Tây Nguyên,",
+      "title_line_2": "nơi đất đỏ kể chuyện",
+      "desc": "Chúng tôi ở đây để lắng nghe câu chuyện của bạn, chia sẻ tầm nhìn về một nền nông nghiệp bền vững, và cùng bạn chạm đến giá trị trường tồn từ miền đất đỏ bazan trù phú."
+    },
+    "sectionTwo": {
+      "title": "Hãy bắt đầu hành trình cùng chúng tôi!",
+      "paragraph_1": "Bạn yêu thiên nhiên, quan tâm đến đầu tư bền vững, đam mê các mô hình công nghệ tiên tiến?",
+      "paragraph_2": "Bạn muốn hiểu cách chúng tôi kết nối đất đỏ Tây Nguyên với những tiến bộ công nghệ mới nhất – hoặc đơn giản là mong một lần đứng giữa cánh đồng cà phê, lắng nghe câu chuyện của người nông dân bản địa?",
+      "paragraph_3": "Hãy chia sẻ điều bạn tìm kiếm – chúng tôi luôn sẵn sàng lắng nghe và đồng hành.",
+      "paragraph_4": "Từ hôm nay và hướng đến 200 ha ngày mai, hành trình của Farmblock đang rộng mở, và chúng tôi mời bạn cùng viết tiếp câu chuyện phát triển bền vững ấy, từ từng gốc cây đến những giá trị thật."
+    }
+  },
+  "blog": {
+    "hero": {
+      "label": "Sổ Tay Nhà Nông",
+      "title": "Câu chuyện từ cánh đồng số",
+      "desc": "Tin tức, góc nhìn và cập nhật từ hành trình số hóa nông nghiệp của FarmBlock."
+    },
+    "loading": "Đang tải bài viết...",
+    "error": "Không thể tải danh sách bài viết. Vui lòng thử lại sau.",
+    "empty": "Chưa có bài viết nào.",
+    "read_more": "Đọc thêm →",
+    "back": "Quay lại Sổ Tay Nhà Nông",
+    "not_found": "Không tìm thấy bài viết.",
+    "pagination_previous": "Trước",
+    "pagination_next": "Sau",
+    "description": "Tin tức và cập nhật từ FarmBlock về nông nghiệp số và Tây Nguyên.",
+    "detail_fallback_title": "Sổ Tay Nhà Nông | FarmBlock"
+  },
+  "policy": {
+    "title": "Chính sách quyền riêng tư của FarmBlock",
+    "effective_date": "Ngày có hiệu lực",
+    "last_updated": "Cập nhật lần cuối",
+    "description": "Chính sách của FarmBlock về việc thu thập, sử dụng, lưu trữ, chia sẻ và bảo vệ thông tin cá nhân."
+  }
 }
