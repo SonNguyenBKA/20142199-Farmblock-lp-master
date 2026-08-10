@@ -16,7 +16,7 @@
     "home": "Home",
     "about_us": "About Us",
     "model": "Operating Model",
-    "technology": "Farmer's Handbook",
+    "technology": "News",
     "contact": "Contact",
     "download_app": "Download App"
   },
@@ -28,7 +28,7 @@
     "home": "Home",
     "about_me": "About Us",
     "operating_model": "Operating Model",
-    "blog": "Farmer's Handbook",
+    "blog": "FarmBlock News",
     "privacy_policy": "Privacy Policy",
     "terms_of_service": "Terms of Service",
     "faq": "FAQ",
@@ -91,7 +91,7 @@
         },
         "global": {
           "title": "Global vision",
-          "desc": "Together with agricultural partners and experts from Israel and Europe, we bring Vietnamese produce to families around the world and elevate the value of agriculture."
+          "desc": "Together with international agricultural partners and experts, we bring Vietnamese produce to families around the world, elevating the value of agriculture."
         }
       }
     },
@@ -176,9 +176,9 @@
     },
     "sectionTwo": {
       "title": "From the rich red basalt soil",
-      "paragraph_1": "The Central Highlands is a red-basalt region where bold coffee beans and sweet durian grow in a tropical highland climate. More than 30 hectares of fertile land here is where we began—not simply to grow crops, but to plant the seeds of sustainable agriculture.",
+      "paragraph_1": "The Central Highlands is a red-basalt region where bold coffee beans and sweet durian grow in a tropical highland climate. These fertile lands are where we began—not simply to grow crops, but to plant the seeds of sustainable agriculture.",
       "paragraph_2": "We believe agriculture is not only cultivation; it is a story about people, nature, and the future.",
-      "paragraph_3": "With the dedication of Central Highlands farmers and pioneering Israeli technology, we care for every stretch of soil and make every harvest transparent, opening a path for Vietnamese produce to reach family tables around the world.",
+      "paragraph_3": "With the dedication of Central Highlands farmers and pioneering international technology, we care for every stretch of soil and make every harvest transparent, opening a path for Vietnamese produce to reach family tables around the world.",
       "paragraph_4": "We dream of smart fields where nature and technology work in harmony, and every farmer is a hero.",
       "collaboration_eyebrow": "Partnering for sustainability",
       "collaboration_title": "We move forward with the pioneers"
@@ -233,7 +233,7 @@
       }
     },
     "sectionSix": {
-      "title": "Farmer's Handbook"
+      "title": "FarmBlock News"
     }
   },
   "model": {
@@ -302,7 +302,7 @@
   },
   "blog": {
     "hero": {
-      "label": "Farmer's Handbook",
+      "label": "FarmBlock News",
       "title": "Stories from the digital field",
       "desc": "News, perspectives, and updates from FarmBlock’s journey to digitize agriculture."
     },
@@ -310,12 +310,12 @@
     "error": "Unable to load the article list. Please try again later.",
     "empty": "No articles yet.",
     "read_more": "Read more →",
-    "back": "← Back to Farmer's Handbook",
+    "back": "← Back to FarmBlock News",
     "not_found": "Article not found.",
     "pagination_previous": "Previous",
     "pagination_next": "Next",
     "description": "News and updates from FarmBlock on digital agriculture and the Central Highlands.",
-    "detail_fallback_title": "Farmer's Handbook | FarmBlock"
+    "detail_fallback_title": "FarmBlock News | FarmBlock"
   },
   "policy": {
     "title": "FarmBlock Privacy Policy",

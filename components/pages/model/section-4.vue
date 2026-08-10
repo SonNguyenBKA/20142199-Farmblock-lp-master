@@ -1,7 +1,7 @@
 <template>
   <section class="model-section-4">
     <div class="model-section-4--layer1">
-      <img src="@/assets/images/pages/model/bg-section-4.webp" alt="">
+      <img src="@/assets/images/pages/model/bg-section-4-farm.png" alt="">
     </div>
     <div class="model-section-4--layer2"></div>
     <div class="model-section-4--layer3">

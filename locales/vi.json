@@ -16,7 +16,7 @@
     "home": "Trang chủ",
     "about_us": "Về chúng tôi",
     "model": "Mô hình",
-    "technology": "Sổ Tay Nhà Nông",
+    "technology": "Bảng tin",
     "contact": "Liên hệ",
     "download_app": "Tải ứng dụng"
   },
@@ -28,7 +28,7 @@
     "home": "Trang chủ",
     "about_me": "Về Chúng tôi",
     "operating_model": "Mô hình vận hành",
-    "blog": "Sổ Tay Nhà Nông",
+    "blog": "Bảng tin FarmBlock",
     "privacy_policy": "Chính sách bảo mật",
     "terms_of_service": "Điều khoản sử dụng dịch vụ",
     "faq": "Câu hỏi thường gặp",
@@ -91,7 +91,7 @@
         },
         "global": {
           "title": "Tầm nhìn toàn cầu",
-          "desc": "Cùng các đối tác và các chuyên gia nông nghiệp đến từ Israel và châu Âu, chúng tôi đưa nông sản Việt Nam đến bữa ăn của các gia đình toàn cầu, nâng tầm giá trị nông nghiệp."
+          "desc": "Cùng các đối tác và các chuyên gia nông nghiệp quốc tế, chúng tôi đưa nông sản Việt Nam đến bữa ăn của các gia đình toàn cầu, nâng tầm giá trị nông nghiệp."
         }
       }
     },
@@ -176,9 +176,9 @@
     },
     "sectionTwo": {
       "title": "Từ miền đất đỏ bazan trù phú",
-      "paragraph_1": "Tây Nguyên là vùng đất đỏ bazan nơi những hạt cà phê đậm đà và những trái sầu riêng ngọt ngào lớn lên với khí hậu nhiệt đới gió mùa cao nguyên. Hơn 30ha đất đai trù phú ở đây là nơi chúng tôi bắt đầu, không chỉ để trồng cây, mà để gieo trồng những hạt giống của một nền nông nghiệp bền vững.",
+      "paragraph_1": "Tây Nguyên là vùng đất đỏ bazan nơi những hạt cà phê đậm đà và những trái sầu riêng ngọt ngào lớn lên với khí hậu nhiệt đới gió mùa cao nguyên. Những mảnh đất trù phú ở đây là nơi chúng tôi bắt đầu, không chỉ để trồng cây, mà để gieo trồng những hạt giống của một nền nông nghiệp bền vững.",
       "paragraph_2": "Chúng tôi tin rằng nông nghiệp không chỉ là canh tác, mà là câu chuyện về con người, thiên nhiên, và tương lai.",
-      "paragraph_3": "Với tâm huyết của nông dân Tây Nguyên và công nghệ tiên phong từ Israel, chúng tôi chăm sóc từng luống đất, minh bạch từng vụ mùa, từ đó dẫn đường để mang nông sản Việt đến bàn ăn của các gia đình trên thế giới.",
+      "paragraph_3": "Với tâm huyết của nông dân Tây Nguyên và công nghệ tiên phong từ quốc tế, chúng tôi chăm sóc từng luống đất, minh bạch từng vụ mùa, từ đó dẫn đường để mang nông sản Việt đến bàn ăn của các gia đình trên thế giới.",
       "paragraph_4": "Chúng tôi mơ về những cánh đồng thông minh, nơi thiên nhiên và công nghệ hòa quyện, nơi mỗi người nông dân là một người anh hùng.",
       "collaboration_eyebrow": "Hợp tác vì sự bền vững",
       "collaboration_title": "Chúng tôi đồng hành cùng những người tiên phong"
@@ -233,7 +233,7 @@
       }
     },
     "sectionSix": {
-      "title": "Sổ Tay Nhà Nông"
+      "title": "Bảng tin FarmBlock"
     }
   },
   "model": {
@@ -302,7 +302,7 @@
   },
   "blog": {
     "hero": {
-      "label": "Sổ Tay Nhà Nông",
+      "label": "Bảng tin FarmBlock",
       "title": "Câu chuyện từ cánh đồng số",
       "desc": "Tin tức, góc nhìn và cập nhật từ hành trình số hóa nông nghiệp của FarmBlock."
     },
@@ -310,12 +310,12 @@
     "error": "Không thể tải danh sách bài viết. Vui lòng thử lại sau.",
     "empty": "Chưa có bài viết nào.",
     "read_more": "Đọc thêm →",
-    "back": "Quay lại Sổ Tay Nhà Nông",
+    "back": "Quay lại Bảng tin FarmBlock",
     "not_found": "Không tìm thấy bài viết.",
     "pagination_previous": "Trước",
     "pagination_next": "Sau",
     "description": "Tin tức và cập nhật từ FarmBlock về nông nghiệp số và Tây Nguyên.",
-    "detail_fallback_title": "Sổ Tay Nhà Nông | FarmBlock"
+    "detail_fallback_title": "Bảng tin FarmBlock | FarmBlock"
   },
   "policy": {
     "title": "Chính sách quyền riêng tư của FarmBlock",
