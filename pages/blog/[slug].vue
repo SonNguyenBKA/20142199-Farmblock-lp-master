@@ -131,6 +131,26 @@ const formatDate = (value: string | null) => {
       line-height: 1.3;
     }
 
+    :deep(h1) {
+      font-size: 1.875rem;
+      font-weight: 700;
+    }
+
+    :deep(h2) {
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+
+    :deep(h3) {
+      font-size: 1.25rem;
+      font-weight: 700;
+    }
+
+    :deep(strong),
+    :deep(b) {
+      font-weight: 700;
+    }
+
     :deep(p) {
       margin-bottom: 1rem;
     }
