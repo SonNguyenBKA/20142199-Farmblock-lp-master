@@ -46,7 +46,7 @@
               :aria-pressed="selectedTags.includes(tag.slug)"
               @click="toggleTag(tag.slug)"
             >
-              {{ tag.name }}
+              {{ getTagLabel(tag) }}
             </button>
           </div>
         </div>
@@ -72,7 +72,7 @@
             <time class="page-academy__date">{{ formatDate(post.published_at) }}</time>
             <h2 class="page-academy__card-title">{{ post.title }}</h2>
             <div v-if="post.tags?.length" class="page-academy__card-tags">
-              <span v-for="tag in post.tags" :key="tag.id" class="page-academy__card-tag">{{ tag.name }}</span>
+              <span v-for="tag in post.tags" :key="tag.id" class="page-academy__card-tag">{{ getTagLabel(tag) }}</span>
             </div>
             <p v-if="post.excerpt" class="page-academy__card-excerpt">{{ post.excerpt }}</p>
             <span class="page-academy__read-more">{{ $t('academy.read_more') }}</span>
@@ -97,6 +97,7 @@
 import type { AcademyPost, AcademyTag } from '~/types/academy'
 
 const { fetchAcademies, fetchAcademyTags } = useAcademyApi()
+const { getTagLabel } = useAcademyTagLabel()
 const { locale, t } = useI18n()
 const page = ref(1)
 const searchInput = ref('')

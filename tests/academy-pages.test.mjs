@@ -46,3 +46,18 @@ test('keeps Blog and adds Academy to the public navigation', async () => {
   assert.equal(vi.academy.hero.label, 'Học viện FarmBlock')
   assert.equal(vi.academy.hero.title, 'Một nơi để hiểu thêm về nông nghiệp')
 })
+
+test('localizes Academy tags on filter, card, and detail surfaces', async () => {
+  const [listPage, detailPage, vi, en] = await Promise.all([
+    read('pages/academy/index.vue'),
+    read('pages/academy/[slug].vue'),
+    read('locales/vi.json').then(JSON.parse),
+    read('locales/en.json').then(JSON.parse),
+  ])
+
+  assert.match(listPage, /getTagLabel\(tag\)/)
+  assert.match(detailPage, /getTagLabel\(tag\)/)
+  assert.equal(vi.academy.tags['co-ban'], 'Cơ bản')
+  assert.equal(en.academy.tags['co-ban'], 'Basic')
+  assert.equal(en.academy.tags['hoa-hoc-dat'], 'Soil chemistry')
+})

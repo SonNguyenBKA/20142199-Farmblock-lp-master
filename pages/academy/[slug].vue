@@ -12,7 +12,7 @@
           <time class="page-academy-detail__date">{{ formatDate(post.published_at) }}</time>
           <h1 class="text-heading-36-bold text-[#F0F9E5] md:text-heading-56-bold">{{ post.title }}</h1>
           <div v-if="post.tags?.length" class="page-academy-detail__tags">
-            <span v-for="tag in post.tags" :key="tag.id" class="page-academy-detail__tag">{{ tag.name }}</span>
+            <span v-for="tag in post.tags" :key="tag.id" class="page-academy-detail__tag">{{ getTagLabel(tag) }}</span>
           </div>
           <p v-if="post.excerpt" class="page-academy-detail__excerpt">{{ post.excerpt }}</p>
           <p v-if="post.author?.name" class="page-academy-detail__author">{{ $t('common.by') }} {{ post.author.name }}</p>
@@ -32,6 +32,7 @@
 const route = useRoute()
 const slug = computed(() => route.params.slug as string)
 const { fetchAcademyBySlug } = useAcademyApi()
+const { getTagLabel } = useAcademyTagLabel()
 const { locale, t } = useI18n()
 
 const { data: post, pending, error } = await useAsyncData(
