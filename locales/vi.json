@@ -17,6 +17,7 @@
     "about_us": "Về chúng tôi",
     "model": "Mô hình",
     "technology": "Bảng tin",
+    "academy": "Học viện",
     "contact": "Liên hệ",
     "download_app": "Tải ứng dụng"
   },
@@ -29,6 +30,7 @@
     "about_me": "Về Chúng tôi",
     "operating_model": "Mô hình vận hành",
     "blog": "Bảng tin FarmBlock",
+    "academy": "Học viện FarmBlock",
     "privacy_policy": "Chính sách bảo mật",
     "terms_of_service": "Điều khoản sử dụng dịch vụ",
     "faq": "Câu hỏi thường gặp",
@@ -316,6 +318,28 @@
     "pagination_next": "Sau",
     "description": "Tin tức và cập nhật từ FarmBlock về nông nghiệp số và Tây Nguyên.",
     "detail_fallback_title": "Bảng tin FarmBlock | FarmBlock"
+  },
+  "academy": {
+    "hero": {
+      "label": "Học viện FarmBlock",
+      "title": "Một nơi để hiểu thêm về nông nghiệp",
+      "desc": "Những kiến thức giúp bạn hiểu rõ hơn về đất, cây trồng và cách một vùng canh tác được vận hành."
+    },
+    "loading": "Đang tải bài viết Học viện...",
+    "loading_tags": "Đang tải danh sách tags...",
+    "error": "Không thể tải danh sách bài viết Học viện. Vui lòng thử lại sau.",
+    "empty": "Chưa có bài viết phù hợp.",
+    "read_more": "Đọc bài →",
+    "back": "Quay lại Học viện FarmBlock",
+    "not_found": "Không tìm thấy bài viết Học viện.",
+    "search_label": "Tìm kiếm bài viết Học viện",
+    "search_placeholder": "Tìm theo tiêu đề hoặc mô tả ngắn...",
+    "filter_by_tag": "Lọc theo chủ đề",
+    "clear": "Xóa",
+    "clear_tags": "Bỏ lọc",
+    "pagination_previous": "Trước",
+    "pagination_next": "Sau",
+    "description": "Kiến thức về đất, cây trồng và vận hành vùng canh tác từ Học viện FarmBlock."
   },
   "policy": {
     "title": "Chính sách quyền riêng tư của FarmBlock",

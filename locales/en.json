@@ -17,6 +17,7 @@
     "about_us": "About Us",
     "model": "Operating Model",
     "technology": "News",
+    "academy": "Academy",
     "contact": "Contact",
     "download_app": "Download App"
   },
@@ -29,6 +30,7 @@
     "about_me": "About Us",
     "operating_model": "Operating Model",
     "blog": "FarmBlock News",
+    "academy": "FarmBlock Academy",
     "privacy_policy": "Privacy Policy",
     "terms_of_service": "Terms of Service",
     "faq": "FAQ",
@@ -316,6 +318,28 @@
     "pagination_next": "Next",
     "description": "News and updates from FarmBlock on digital agriculture and the Central Highlands.",
     "detail_fallback_title": "FarmBlock News | FarmBlock"
+  },
+  "academy": {
+    "hero": {
+      "label": "FarmBlock Academy",
+      "title": "A place to learn more about agriculture",
+      "desc": "Knowledge to help you understand soil, crops, and how a growing region operates."
+    },
+    "loading": "Loading Academy articles...",
+    "loading_tags": "Loading tags...",
+    "error": "Unable to load Academy articles. Please try again later.",
+    "empty": "No matching articles yet.",
+    "read_more": "Read article →",
+    "back": "← Back to FarmBlock Academy",
+    "not_found": "Academy article not found.",
+    "search_label": "Search Academy articles",
+    "search_placeholder": "Search by title or short description...",
+    "filter_by_tag": "Filter by topic",
+    "clear": "Clear",
+    "clear_tags": "Clear filters",
+    "pagination_previous": "Previous",
+    "pagination_next": "Next",
+    "description": "Knowledge about soil, crops, and growing-region operations from FarmBlock Academy."
   },
   "policy": {
     "title": "FarmBlock Privacy Policy",

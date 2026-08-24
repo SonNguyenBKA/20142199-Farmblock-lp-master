@@ -103,6 +103,11 @@ const quickMenu = computed(() => [
     link: '/blog',
     coming_soon: false,
   },
+  {
+    name: t('footer.academy'),
+    link: '/academy',
+    coming_soon: false,
+  },
 ])
 const policyList = computed(() => [
   {

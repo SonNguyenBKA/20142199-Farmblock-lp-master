@@ -152,6 +152,11 @@ const menus = computed(() => [
     coming_soon: false,
   },
   {
+    name: t('menu.academy'),
+    link: '/academy',
+    coming_soon: false,
+  },
+  {
     name: t('menu.contact'),
     link: '/contact',
     coming_soon: false,
