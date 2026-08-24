@@ -19,6 +19,13 @@ test('publishes a separate Academy list page with search and tag filters', async
   assert.match(page, /\/academy\//)
 })
 
+test('uses the custom clear action without the browser-native search cancel control', async () => {
+  const page = await read('pages/academy/index.vue')
+
+  assert.match(page, /page-academy__clear/)
+  assert.match(page, /&::-webkit-search-cancel-button\s*\{\s*-webkit-appearance:\s*none;\s*appearance:\s*none;\s*\}/)
+})
+
 test('publishes a separate Academy detail page and API proxy', async () => {
   const [page, api, detailApi] = await Promise.all([
     read('pages/academy/[slug].vue'),

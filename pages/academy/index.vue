@@ -192,7 +192,10 @@ const changePage = (nextPage: number) => {
   &__list { padding: 3rem 1rem 5rem; }
   &__filters { display:flex; flex-direction:column; gap:1.5rem; margin-bottom:2.5rem; }
   &__search-wrap { position:relative; }
-  &__search { width:100%; padding:1rem 5rem 1rem 1.25rem; border:1px solid #b9d7bc; border-radius:12px; color:#06280c; background:#fff; outline:none; }
+  &__search {
+    width:100%; padding:1rem 5rem 1rem 1.25rem; border:1px solid #b9d7bc; border-radius:12px; color:#06280c; background:#fff; outline:none;
+    &::-webkit-search-cancel-button { -webkit-appearance:none; appearance:none; }
+  }
   &__search:focus { border-color:#2d6639; box-shadow:0 0 0 3px rgba(45,102,57,.12); }
   &__clear, &__reset { color:#2d6639; font-size:.875rem; font-weight:600; }
   &__clear { position:absolute; right:1.25rem; top:50%; transform:translateY(-50%); }
