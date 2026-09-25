@@ -42,6 +42,8 @@ export default defineNuxtConfig({
         { property: 'og:title', content: APP_TITLE },
         { property: 'og:description', content: APP_CONTENT },
         { hid: 'og:image', property: 'og:image', content: `${SITE_URL}/metaImage.webp` },
+        { property: 'og:image:width', content: '1200' },
+        { property: 'og:image:height', content: '630' },
         { name: 'twitter:card', content: 'summary_large_image' },
         { name: 'twitter:title', content: APP_TITLE },
         { name: 'twitter:description', content: APP_CONTENT },
