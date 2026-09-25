@@ -15,6 +15,11 @@ function getLocales(): { code: string; file: string }[] {
   })
 }
 
+// Fallbacks keep link previews correct when the build runs without a .env file.
+const APP_TITLE = process.env.APP_TITLE || 'Farmblock - Tiên phong số hóa tài sản nông nghiệp'
+const APP_CONTENT = process.env.APP_CONTENT || 'Hành trình cùng Tây Nguyên - chạm đến tương lai'
+const SITE_URL = (process.env.SITE_URL || 'https://farmblock.vn').replace(/\/$/, '')
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   ssr: false,
@@ -23,33 +28,24 @@ export default defineNuxtConfig({
     head: {
       charset: 'utf-8',
       viewport: 'width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no',
-      title: process.env.APP_TITLE || 'Default Title',
+      title: APP_TITLE,
       meta: [
-        {
-          name: 'description',
-          content: process.env.APP_CONTENT || 'Default Content',
-        },
+        { name: 'description', content: APP_CONTENT },
         { name: 'fb:app_id', content: '' },
         {
           name: 'viewport',
           content: 'width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no',
         },
-        { hid: 'og:image', property: 'og:image', content: '/metaImage.webp' },
-        { property: 'title', content: process.env.APP_TITLE || 'Default Title' },
-        { property: 'og:title', content: process.env.APP_TITLE || 'Default Title' },
-        { hid: 'twitter:image', property: 'twitter:image', content: '/metaImage.webp' },
-        { property: 'twitter:title', content: process.env.APP_TITLE || 'Default Title' },
-        {
-          hid: 'twitter:description',
-          property: 'twitter:description',
-          content: process.env.APP_CONTENT || 'Default Content',
-        },
-        {
-          hid: 'twitter:card',
-          property: 'twitter:card',
-          content: process.env.APP_CONTENT || 'Default Content',
-        },
-        { property: 'twitter:card', content: 'summary_large_image' },
+        { property: 'og:type', content: 'website' },
+        { property: 'og:site_name', content: 'FarmBlock' },
+        { property: 'og:url', content: SITE_URL },
+        { property: 'og:title', content: APP_TITLE },
+        { property: 'og:description', content: APP_CONTENT },
+        { hid: 'og:image', property: 'og:image', content: `${SITE_URL}/metaImage.webp` },
+        { name: 'twitter:card', content: 'summary_large_image' },
+        { name: 'twitter:title', content: APP_TITLE },
+        { name: 'twitter:description', content: APP_CONTENT },
+        { name: 'twitter:image', content: `${SITE_URL}/metaImage.webp` },
       ],
       link: [
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
