@@ -55,7 +55,7 @@ import { Swiper, SwiperSlide } from 'swiper/vue'
 import { A11y, Autoplay, EffectFade, Navigation, Pagination, Scrollbar } from 'swiper/modules'
 import bgSlide1 from '@/assets/images/pages/model/slide-section-5-1.webp'
 import bgSlide2 from '@/assets/images/pages/model/slide-section-5-2.webp'
-import bgSlide3 from '@/assets/images/pages/model/slide-section-5-3.webp'
+import bgSlide3 from '@/assets/images/pages/model/slide-section-5-3-farm.webp'
 
 const modules = [Navigation, Pagination, Scrollbar, A11y, EffectFade, Autoplay]
 

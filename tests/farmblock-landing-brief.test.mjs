@@ -60,10 +60,12 @@ test('uses the requested bilingual news naming', async () => {
   assert.equal(en.blog.detail_fallback_title, 'FarmBlock News | FarmBlock')
 })
 
-test('uses the supplied farm image as a local model section asset', async () => {
-  const component = await readFile(path.join(root, 'components/pages/model/section-4.vue'), 'utf8')
-  const imagePath = path.join(root, 'assets/images/pages/model/bg-section-4-farm.png')
+test('uses the supplied farm image in the model real-photo carousel', async () => {
+  const carousel = await readFile(path.join(root, 'components/pages/model/section-5.vue'), 'utf8')
+  const background = await readFile(path.join(root, 'components/pages/model/section-4.vue'), 'utf8')
+  const imagePath = path.join(root, 'assets/images/pages/model/slide-section-5-3-farm.webp')
 
-  assert.match(component, /bg-section-4-farm\.png/)
+  assert.match(carousel, /slide-section-5-3-farm\.webp/)
+  assert.match(background, /bg-section-4\.webp/)
   assert.ok((await stat(imagePath)).size > 0)
 })
